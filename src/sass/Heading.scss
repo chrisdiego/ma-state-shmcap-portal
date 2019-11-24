@@ -1,0 +1,38 @@
+.heading {
+    .heading-primary {
+        .logo {
+            max-height: 80px;
+        }
+
+        .utils {
+            input {
+                width: 120px;
+            }
+        }
+    }
+    .heading-secondary {
+        .title {
+            font-size: 32px;
+        }
+        .nav-item {
+            font-size: 22px;
+            &:hover,
+            &.selected {
+                text-decoration: none;
+                background: white;
+                color: #C74D00 !important;
+            }
+        }
+    }
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #2B1E76;
+  opacity: 1;
+  font-size: 13px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #2B1E76;
+  opacity: 1;
+  font-size: 13px;
+}

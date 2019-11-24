@@ -1,0 +1,63 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch, faBars, faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import Menu from './Menu';
+import logo from './assets/logo.png';
+import './sass/Heading.scss';
+
+const Heading = () => {
+    const [activeMenu, setActiveMenu] = useState("");
+
+    const toggleMenu = (menu) => {
+        if(menu === activeMenu)
+            setActiveMenu("")
+        else 
+            setActiveMenu(menu)
+    }
+
+    return (
+        <div className="heading">
+            <div className="heading-primary d-flex align-items-center justify-content-between my-3 mx-5">
+                <Link className="d-flex align-items-center text-decoration-none" to="/">
+                    <img className="mr-3 logo" src={logo} alt="logo" />
+                        <div>
+                            <h1 className="m-0">
+                                <span className="text-secondary">resilient</span>
+                                <strong className="orange-text"> MA </strong>
+                            </h1>
+                            <small className="tagline text-secondary">Climate Change Clearinghouse for the Commonwealth</small>
+                        </div>
+                </Link>
+                <div className="utils d-flex align-items-center">
+                    <div className="search mt-2">
+                        <FontAwesomeIcon className="mr-2" icon={faSearch}/>
+                        <input className="border-0" placeholder="SEARCH" />
+                    </div>
+                    <div className="menu d-flex flex-column align-items-center">
+                        <span className="text-xsmall text-secondary font-weight-bold">MENU</span>
+                        <FontAwesomeIcon className="" icon={faBars} size="2x" color="#2B1E76" />
+                    </div>
+                </div>
+            </div>
+            <div className="heading-secondary bg-primary text-white pl-5 d-flex align-items-center justify-content-between">
+                <h1 className="title m-0">Massachusetts <b>State Hazard Mitigation & Climate Action Plan</b></h1>
+                <div className="pr-1 d-flex position-relative">
+                <button className={`${activeMenu === "plan" ? "selected" : ""} btn btn-link text-white nav-item font-weight-bold py-4 text-decoration-none`} onClick={() => toggleMenu("plan")}>
+                    Full Plan
+                    <FontAwesomeIcon className="ml-1" icon={faAngleDown} size="md" />
+                </button>
+                <button className={`${activeMenu === "highlights" ? "selected" : ""} btn btn-link text-white nav-item font-weight-bold py-4 text-decoration-none`} onClick={() => toggleMenu("highlights")}>
+                    Plan Highlights
+                    <FontAwesomeIcon className="ml-1" icon={faAngleDown} size="md" />
+                </button>
+                </div>
+            </div>
+            <div className="nav-menu">
+                <Menu activeMenu={activeMenu} /> 
+            </div>
+        </div>
+    );
+};
+
+export default Heading;

@@ -1,0 +1,10 @@
+$theme-colors: (
+  "primary": #C74D00,
+  "secondary": #2B1E76
+);
+
+.text-xsmall {
+  font-size: 10px;
+}
+
+@import '~bootstrap/scss/bootstrap.scss';

@@ -1,0 +1,21 @@
+
+.facetGroupList {
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.facetGroupTitle {
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline
+    }
+}
+
+.rotate {
+    transform: rotate(-90deg);
+}
+
+.accordion__icon {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}

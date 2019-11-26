@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Row, Col } from 'react-bootstrap';
 import { Transition } from 'react-transition-group';
 import { highlightFacets } from './data.js'
+import { Link } from 'react-router-dom';
 import Chevron from './utils/Chevron.js';
 import './sass/Menu.scss';
 
@@ -45,9 +46,9 @@ const menuContent = (menu) => {
             <>
                 <Col xs={3}>
                     <ul className="list-unstyled text-secondary font-weight-bold mx-5">
-                        <li className="mb-4">Climate change is intensifying natural hazards</li>
-                        <li className="mb-4">Risk and Vulnerabilities the Commonwealth Faces</li>
-                        <li className="mb-4">Current Capabilities and Adaptability</li>
+                        <li className="mb-4"><Link to="/hazards" className="text-secondary">Climate change is intensifying natural hazards</Link></li>
+                        <li className="mb-4"><Link to="/risks" className="text-secondary">Risk and Vulnerabilities the Commonwealth Faces</Link></li>
+                        <li className="mb-4"><Link to="/capabilities" className="text-secondary">Current Capabilities and Adaptability</Link></li>
                     </ul>
                 </Col>
                 <Col xs={6} className="text-center pt-5" style={{backgroundColor: "#F2F2F2"}}>

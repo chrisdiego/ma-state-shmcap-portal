@@ -4,6 +4,8 @@ import { Container } from 'react-bootstrap';
 import Heading from './Heading';
 import IndexPage from './pages/IndexPage';
 import HazardsPage from './pages/HazardsPage';
+import RisksPage from './pages/RisksPage';
+import CapabilitiesPage from './pages/CapabilitiesPage';
 import './sass/App.scss';
 
 const App = () => {
@@ -17,6 +19,12 @@ const App = () => {
           </Route>
           <Route path="/hazards" exact>
             <HazardsPage />
+          </Route>
+          <Route path="/risks" exact>
+            <RisksPage />
+          </Route>
+          <Route path="/capabilities" exact>
+            <CapabilitiesPage />
           </Route>
         </Switch>
 

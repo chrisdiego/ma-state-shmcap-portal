@@ -65,7 +65,7 @@ const menuContent = (menu) => {
                     <h3 className="m-0 font-weight-bold">Implementation</h3>
                     <i>Putting the plan to work</i>
                     <ul className="text-secondary list-unstyled font-weight-bold my-4">
-                        <li>Our Strategy</li>
+                        <li><Link to="/our-strategy" className="text-secondary">Our Strategy</Link></li>
                         <li>Resilient MA Action Team</li>
                         <li>SHMCAP Action Tracker</li>
                         <li>Glossary</li>

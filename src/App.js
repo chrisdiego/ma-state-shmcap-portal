@@ -6,6 +6,7 @@ import IndexPage from './pages/IndexPage';
 import HazardsPage from './pages/HazardsPage';
 import RisksPage from './pages/RisksPage';
 import CapabilitiesPage from './pages/CapabilitiesPage';
+import OurStrategyPage from './pages/OurStrategyPage';
 import './sass/App.scss';
 
 const App = () => {
@@ -25,6 +26,9 @@ const App = () => {
           </Route>
           <Route path="/capabilities" exact>
             <CapabilitiesPage />
+          </Route>
+          <Route path="/our-strategy" exact>
+            <OurStrategyPage />
           </Route>
         </Switch>
 

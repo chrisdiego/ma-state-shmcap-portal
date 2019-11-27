@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
 
-const ExpandableSection = ({heading, description, src, alt, hazards, interactions, impacts, projections}) => {
+const ExpandableSection = ({id, heading, headingLink, description, src, alt, hazards, interactions, impacts, projections}) => {
     const [expanded, setExpanded] = useState();
 
     const expandSection = () => {
@@ -14,9 +14,9 @@ const ExpandableSection = ({heading, description, src, alt, hazards, interaction
                 <img className="mw-100" src={src} alt={alt} />
             </Col>
             <Col sm={10}>
-                <button className="btn btn-link p-0 text-secondary" onClick={() => expandSection()}>
+                <a className="btn btn-link p-0 text-secondary" href={headingLink} target="_blank" id={id}>
                     <h5 className="text-secondary font-weight-bold">{heading}</h5>
-                </button>
+                </a>
                 <p>{description}</p>
                 {expanded ? 
                     <>

@@ -21,7 +21,7 @@ const OurStrategyPage = () => {
 	];
 	return (
 		<>
-			<Row>
+			<Row className="m-0">
 				<PageHeading title="Our Strategy" />
 			</Row>
 			<Row className="m-5">

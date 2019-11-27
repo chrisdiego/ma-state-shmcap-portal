@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Toolbox = ({ glossary }) => {
     return (
@@ -8,7 +8,7 @@ const Toolbox = ({ glossary }) => {
                 <>
                     <h5 className="text-secondary font-weight-bold">WHAT'S IN THIS SECTION:</h5>
                     <ul className="px-3">
-                        {glossary.map(link => <li ><Link to="/placeholder" className="text-secondary">{link.label}</Link></li>)}
+                        {glossary.map(link => <li ><Link to={link.href} className="text-secondary">{link.label}</Link></li>)}
                     </ul>
                 </> : null
             }

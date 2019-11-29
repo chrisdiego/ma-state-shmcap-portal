@@ -7,13 +7,10 @@ import logo from './assets/logo.png';
 import './sass/Heading.scss';
 
 const Heading = () => {
-    const [activeMenu, setActiveMenu] = useState("");
+    const [activeMenu, setActiveMenu] = useState(false);
 
-    const toggleMenu = (menu) => {
-        if(menu === activeMenu)
-            setActiveMenu("")
-        else 
-            setActiveMenu(menu)
+    const toggleMenu = () => {
+        setActiveMenu(!activeMenu)
     }
 
     return (
@@ -43,18 +40,21 @@ const Heading = () => {
             <div className="heading-secondary bg-primary text-white pl-5 d-flex align-items-center justify-content-between">
                 <h1 className="title m-0">Massachusetts <b>State Hazard Mitigation & Climate Action Plan</b></h1>
                 <div className="pr-1 d-flex position-relative">
-                <button className={`${activeMenu === "plan" ? "selected" : ""} btn btn-link text-white nav-item font-weight-bold py-4 text-decoration-none`} onClick={() => toggleMenu("plan")}>
+                <Link to="/full-plan" style={{borderRadius: "0"}} className="btn btn-link text-white nav-item font-weight-bold py-4 text-decoration-none" onClick={() => setActiveMenu(false)}>
                     Full Plan
                     <FontAwesomeIcon className="ml-1" icon={faAngleDown} size="md" />
-                </button>
-                <button className={`${activeMenu === "highlights" ? "selected" : ""} btn btn-link text-white nav-item font-weight-bold py-4 text-decoration-none`} onClick={() => toggleMenu("highlights")}>
+                </Link>
+                <button style={{borderRadius: "0"}} className={`${activeMenu ? "selected" : ""} btn btn-link text-white nav-item font-weight-bold py-4 text-decoration-none`} onClick={() => toggleMenu()}>
                     Plan Highlights
                     <FontAwesomeIcon className="ml-1" icon={faAngleDown} size="md" />
                 </button>
                 </div>
             </div>
-            <div className="nav-menu">
-                <Menu activeMenu={activeMenu} /> 
+            <div className="nav-menu position-absolute bg-white w-100" style={{zIndex: "1"}}>
+                <Menu 
+                    activeMenu={activeMenu}
+                    setActiveMenu={setActiveMenu}
+                /> 
             </div>
         </div>
     );

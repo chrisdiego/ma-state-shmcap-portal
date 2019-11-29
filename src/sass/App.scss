@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900');
+
 $theme-colors: (
   "primary": #C74D00,
   "secondary": #2B1E76
 );
+
+body {
+  font-family: Raleway,sans-serif !important;
+}
+
+.page-container {
+  max-width: 2000px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
 
 .text-xsmall {
   font-size: 10px;

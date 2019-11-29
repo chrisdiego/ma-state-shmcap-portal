@@ -17,10 +17,10 @@ const RisksPage = () => {
 	];
 	return (
 		<>
-			<Row>
+			<Row className="m-0">
 				<PageHeading title="Risks & Vulnerabilities the Commonwealth Faces" />
 			</Row>
-			<Row className="m-5">
+			<Row className="my-5 page-container mx-auto">
 				<Col sm={7}>
 				   <p>Climate change and the anticipated exacerbation of natural hazards will affect residents, government, local communities, infrastructure, natural resources, and the private sector. The degree of exposure and consequences of these changes will vary across the Commonwealth</p>
 				   <a href="https://www.mass.gov/files/documents/2018/09/18/SHMCAP-September2018-Executive-Summary.pdf#%5B%7B%22num%22%3A60%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22Fit%22%7D%5D" className="btn btn-primary my-4" target="_blank">Want to know more?</a>

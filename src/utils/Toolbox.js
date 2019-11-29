@@ -1,5 +1,6 @@
 import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 const Toolbox = ({ glossary }) => {
     return (
@@ -8,15 +9,15 @@ const Toolbox = ({ glossary }) => {
                 <>
                     <h5 className="text-secondary font-weight-bold">WHAT'S IN THIS SECTION:</h5>
                     <ul className="px-3">
-                        {glossary.map(link => <li ><Link to={link.href} className="text-secondary">{link.label}</Link></li>)}
+                        {glossary.map(link => <li ><HashLink to={link.href} className="text-secondary">{link.label}</HashLink></li>)}
                     </ul>
                 </> : null
             }
             <h5 className="text-secondary font-weight-bold">TOOLS:</h5>
             <ul className="px-3">
-                <li><Link to="/placeholder" className="text-secondary">SHMCAP Action Tracker</Link></li>
+                <li><a href="http://ma-state-action-tracker.s3-website-us-east-1.amazonaws.com/#/" className="text-secondary" target="_blank">SHMCAP Action Tracker</a></li>
                 <li><Link to="/placeholder" className="text-secondary">Mapping Tools</Link></li>
-                <li><Link to="/placeholder" className="text-secondary">Glossary</Link></li>
+                <li><Link to="/glossary" className="text-secondary">Glossary</Link></li>
             </ul>
         </div>
     );

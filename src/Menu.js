@@ -4,6 +4,7 @@ import { Transition } from 'react-transition-group';
 import { highlightFacets } from './data.js'
 import { Link } from 'react-router-dom';
 import Chevron from './utils/Chevron.js';
+import summary from './assets/pdf/SHMCAP_executive_summary.pdf';
 import './sass/Menu.scss';
 
 const FacetGroup = ({group}) => {
@@ -40,15 +41,21 @@ const FacetGroup = ({group}) => {
     );
 }
 
-const menuContent = (menu) => {
-    if(menu === "highlights")
+const menuContent = (menu, setActiveMenu) => {
+    if(menu)
         return (
             <>
                 <Col xs={3}>
                     <ul className="list-unstyled text-secondary font-weight-bold mx-5">
-                        <li className="mb-4"><Link to="/hazards" className="text-secondary">Climate change is intensifying natural hazards</Link></li>
-                        <li className="mb-4"><Link to="/risks" className="text-secondary">Risk and Vulnerabilities the Commonwealth Faces</Link></li>
-                        <li className="mb-4"><Link to="/capabilities" className="text-secondary">Current Capabilities and Adaptability</Link></li>
+                        <li className="mb-4">
+                            <Link to="/hazards" className="text-secondary" onClick={() => setActiveMenu(false)}>Climate change is intensifying natural hazards</Link>
+                            </li>
+                        <li className="mb-4">
+                            <Link to="/risks" className="text-secondary" onClick={() => setActiveMenu(false)}>Risk and Vulnerabilities the Commonwealth Faces</Link>
+                            </li>
+                        <li className="mb-4">
+                            <Link to="/capabilities" className="text-secondary" onClick={() => setActiveMenu(false)}>Current Capabilities and Adaptability</Link>
+                            </li>
                     </ul>
                 </Col>
                 <Col xs={6} className="text-center pt-5" style={{backgroundColor: "#F2F2F2"}}>
@@ -65,25 +72,29 @@ const menuContent = (menu) => {
                     <h3 className="m-0 font-weight-bold">Implementation</h3>
                     <i>Putting the plan to work</i>
                     <ul className="text-secondary list-unstyled font-weight-bold my-4">
-                        <li><Link to="/our-strategy" className="text-secondary">Our Strategy</Link></li>
-                        <li>Resilient MA Action Team</li>
-                        <li>SHMCAP Action Tracker</li>
-                        <li>Glossary</li>
+                        <li>
+                            <Link to="/our-strategy" className="text-secondary" onClick={() => setActiveMenu(false)}>Our Strategy</Link>
+                            </li>
+                        <li>
+                            <Link to="/action-team" className="text-secondary" onClick={() => setActiveMenu(false)}>Resilient MA Action Team</Link>
+                            </li>
+                        <li>
+                            <a className="text-secondary" href="http://ma-state-action-tracker.s3-website-us-east-1.amazonaws.com/#/" target="_blank">SHMCAP Action Tracker</a>
+                            </li>
+                        <li>
+                            <Link to="/glossary" className="text-secondary" onClick={() => setActiveMenu(false)}>Glossary</Link>
+                            </li>
                     </ul>
                     <a className="text-uppercase border-top border-primary d-block">Download Full Plan</a>
-                    <a className="text-uppercase border-top border-bottom border-primary d-block">Download Executive Summary</a>
+                    <a href={summary} download className="text-uppercase border-top border-bottom border-primary d-block">Download Executive Summary</a>
                 </Col>
             </>
-        );
-    else if (menu === "plan")
-        return (
-            <div>testing</div>
         );
     else 
         return null
 }
 
-const Menu = ({activeMenu}) => {
+const Menu = ({activeMenu, setActiveMenu}) => {
     const defaultStyle = {
         transition: "opacity 200ms ease-in-out",
         opacity: 0,
@@ -96,10 +107,10 @@ const Menu = ({activeMenu}) => {
         exited:  { opacity: 0 },
       };
     return (
-           <Transition in={activeMenu !== ""} timeout={300}>
+           <Transition in={activeMenu} timeout={300}>
                 {state => (
                     <Row className="shadow align-items-center m-0" style={{...defaultStyle, ...transitionStyles[state]}}>
-                        {menuContent(activeMenu)}
+                        {menuContent(activeMenu, setActiveMenu)}
                     </Row>
                 )}
            </Transition>

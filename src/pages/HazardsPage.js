@@ -30,7 +30,7 @@ const HazardsPage = () => {
             <Row className="m-0">
                 <PageHeading title="Climate Change is Intensifying Natural Hazards" />
             </Row>
-            <Row className="m-5">
+            <Row className="my-5 page-container mx-auto">
                 <Col sm={7}>
                     <p>Climate change is already exacerbating natural hazards and extreme weather events, as well as leading to new impacts that will affect the Commonwealth.  The SHMCAP intgrates informatoin and planning elements for 14 natural hazards that oculd affect the Commonwealth of Massachusetts with the following four climate changes: changes in precipitation, sea level rise, rising temperatures, and extreme weather.</p>
                     <hr style={{borderWidth: "thick", opacity: "0.6"}} className="mt-4" />

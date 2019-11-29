@@ -20,7 +20,7 @@ const CapabilitiesPage = () => {
 			<Row className="m-0">
 				<PageHeading title="Current Capabilities and Adaptability" />
 			</Row>
-			<Row className="m-5">
+			<Row className="my-5 page-container mx-auto">
 				<Col sm={7}>
                     <img className="mw-100 float-left pr-5" src={statehouse} alt="Massachusetts state house" />
                     <p>To maintain its commitment, the Commonwealth will continune to work across state government to build institutional capacity, maintain best available science and data, and develop operations and policies to adapt to changing natural hazards and the effects of climate change.  The SHMCAP evaluates the Commonwealth's existing capabilities to implement hazard mitigation and climate adaptation activities on a state-wide level, and resents agency-specific analyses of the State's capacity to adapt to changing hazards and climate conditions over time.  These results were used to create a comprehensive and effective strategy to integrate future hazard mitigation and climate change adaptation.</p>

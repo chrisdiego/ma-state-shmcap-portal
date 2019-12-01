@@ -7,7 +7,7 @@ import Chevron from './utils/Chevron.js';
 import summary from './assets/pdf/SHMCAP_executive_summary.pdf';
 import './sass/Menu.scss';
 
-const FacetGroup = ({group}) => {
+const FacetGroup = ({group, setActiveMenu}) => {
     const [setActive, setActiveState] = useState("active");
     const [setHeight, setHeightState] = useState("200px");
     const [setRotate, setRotateState] = useState("accordion__icon");
@@ -33,7 +33,7 @@ const FacetGroup = ({group}) => {
                 </div>
                 <div className={`${setActive} facetGroupList`} ref={facetGroupContent} style={{ maxHeight: `${setHeight}` }}>
                     {group.facets.map(facet => (
-                        <a className="d-block text-secondary" href={facet.link}>{facet.title}</a>
+                        <Link className="d-block text-secondary" to={facet.link} onClick={() => setActiveMenu(false)}>{facet.title}</Link>
                     ))}
                 </div>
             </li>
@@ -63,7 +63,7 @@ const menuContent = (menu, setActiveMenu) => {
                     <ul className="list-unstyled">
                         <Row className="px-5">
                             {highlightFacets.map(group => (
-                                <FacetGroup group={group} />
+                                <FacetGroup group={group} setActiveMenu={setActiveMenu} />
                             ))}
                         </Row>
                     </ul>

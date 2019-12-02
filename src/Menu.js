@@ -5,6 +5,7 @@ import { highlightFacets } from './data.js'
 import { Link } from 'react-router-dom';
 import Chevron from './utils/Chevron.js';
 import summary from './assets/pdf/SHMCAP_executive_summary.pdf';
+import plan from './assets/pdf/SHMCAP-September2018-Full-Plan-web.pdf';
 import './sass/Menu.scss';
 
 const FacetGroup = ({group, setActiveMenu}) => {
@@ -25,7 +26,7 @@ const FacetGroup = ({group, setActiveMenu}) => {
       }
 
     return (
-        <Col xs={4}>
+        <Col sm={4}>
             <li className="mb-3">
                 <div className="border-bottom border-primary facetGroupTitle d-flex mb-1" onClick={toggleCollapse}>
                     <h6 className="m-0 text-left text-secondary font-weight-bold">{group.facetGroupTitle}</h6>
@@ -45,8 +46,8 @@ const menuContent = (menu, setActiveMenu) => {
     if(menu)
         return (
             <>
-                <Col xs={3}>
-                    <ul className="list-unstyled text-secondary font-weight-bold mx-5">
+                <Col sm={3}>
+                    <ul className="list-unstyled text-secondary font-weight-bold mx-5 mt-4 mt-sm-0">
                         <li className="mb-4">
                             <Link to="/hazards" className="text-secondary" onClick={() => setActiveMenu(false)}>Climate change is intensifying natural hazards</Link>
                             </li>
@@ -58,8 +59,8 @@ const menuContent = (menu, setActiveMenu) => {
                             </li>
                     </ul>
                 </Col>
-                <Col xs={6} className="text-center pt-5" style={{backgroundColor: "#F2F2F2"}}>
-                    <h3 className="text-secondary font-weight-bold mb-4 text-left ml-5">View Plan Highlights by</h3>
+                <Col sm={6} className="text-center pt-5" style={{backgroundColor: "#F2F2F2"}}>
+                    <h3 className="text-center text-sm-left text-secondary font-weight-bold mb-4 text-left ml-sm-5">View Plan Highlights by</h3>
                     <ul className="list-unstyled">
                         <Row className="px-5">
                             {highlightFacets.map(group => (
@@ -68,7 +69,7 @@ const menuContent = (menu, setActiveMenu) => {
                         </Row>
                     </ul>
                 </Col>
-                <Col xs={3} className="text-primary">
+                <Col sm={3} className="text-primary my-4 my-sm-0 text-center text-sm-left">
                     <h3 className="m-0 font-weight-bold">Implementation</h3>
                     <i>Putting the plan to work</i>
                     <ul className="text-secondary list-unstyled font-weight-bold my-4">
@@ -85,7 +86,7 @@ const menuContent = (menu, setActiveMenu) => {
                             <Link to="/glossary" className="text-secondary" onClick={() => setActiveMenu(false)}>Glossary</Link>
                             </li>
                     </ul>
-                    <a className="text-uppercase border-top border-primary d-block">Download Full Plan</a>
+                    <a href={plan} download className="text-uppercase border-top border-primary d-block">Download Full Plan</a>
                     <a href={summary} download className="text-uppercase border-top border-bottom border-primary d-block">Download Executive Summary</a>
                 </Col>
             </>

@@ -6,6 +6,11 @@ import { Row, Col } from 'react-bootstrap';
 import PDFLink from '../utils/PDFLink';
 import PageLayout from './PageLayout';
 
+//Assets
+import riskImage1 from '../assets/risk-image1.jpg';
+import riskImage2 from '../assets/risk-image2.jpg';
+
+
 const RisksPage = () => {
 	const toolboxData = [
 		{
@@ -25,7 +30,7 @@ const RisksPage = () => {
 		   <h5 className="text-secondary font-weight-bold my-4" id="riskAssessment">Risk Assessment</h5>
 		   <Row className="align-items-center">
 			   <Col sm={6}>
-				<img className="mw-100" src="https://via.placeholder.com/300x400" alt="placeholder image" />
+				<img className="mw-100" src={riskImage1} alt="placeholder image" />
 			   </Col>
 			   <Col sm={6}>
 				<p>The risk assessment includes information from almost 80 state agency climate change vulnerability assessments undertaken during development of this plan as a key requirement of Executve Order 569. Vulnerability to climate change is a function of exposure, sensitivity, and adaptive capacity.</p>
@@ -34,7 +39,7 @@ const RisksPage = () => {
 		   </Row>
 		   <hr style={{borderWidth: "thick", opacity: "0.6"}} className="mt-4" />
 		   <h5 className="text-secondary font-weight-bold my-4" id="keyVulnerability">Key Vulnerability Assessment Findings</h5>
-		   <img className="mw-100" src="https://via.placeholder.com/1000x300" alt="placeholder image" />
+		   <img className="mw-100" src={riskImage2} alt="placeholder image" />
 		   <ul className="pl-3">
 			<li className="mt-3">
 				<b>Vulnerability assessment completed by approximately 80 state agencies</b>

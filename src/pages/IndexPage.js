@@ -1,6 +1,8 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
+import PDFLink from '../utils/PDFLink';
 import cover from '../assets/shmcap-cover.jpg';
+import graph from '../assets/index-graph.png';
 import EOPSSlogo from '../assets/EOPSSlogo.png';
 import massdotlogo from '../assets/massdotlogo.jpg';
 import laborlogo from '../assets/laborlogo.png';
@@ -9,7 +11,7 @@ const IndexPage = () => {
     return (
         <>
             <Row className="m-0">
-                <Col className="p-0" style={{maxHeight: "550px", overflow: "hidden"}}>
+                <Col className="p-0">
                     <img className="mw-100" src={cover} alt="placeholder image"/>
                 </Col>
             </Row>
@@ -35,19 +37,19 @@ const IndexPage = () => {
                     </ul>
                     <Row className="align-items-center">
                         <Col sm={3} className="mr-4">
-                            <img className="mw-100 mr-3 ml-4" src={EOPSSlogo} alt="placeholder image"/>
+                            <img className="mw-100 mr-3 ml-4" src={EOPSSlogo} alt="EOPSS logo"/>
                         </Col>
                         <Col sm={3}>
-                            <img className="mw-100 mr-3" src={massdotlogo} alt="placeholder image"/>
+                            <img className="mw-100 mr-3" src={massdotlogo} alt="Mass DOT logo"/>
                         </Col>
                         <Col sm={4}>
-                            <img className="mw-100" src={laborlogo} alt="placeholder image"/>
+                            <img className="mw-100" src={laborlogo} alt="Labor logo"/>
                         </Col>
                     </Row>
-                    <a href="https://www.mass.gov/files/documents/2018/09/18/SHMCAP-September2018-Executive-Summary.pdf" className="btn btn-primary ml-4 mt-4" target="_blank">Learn More</a>
+                    <PDFLink page="" pdf="summary" className="btn btn-primary ml-4 mt-4">Learn More</PDFLink>
                 </Col>
                 <Col sm={4}>
-                    <img className="mw-100" src="https://via.placeholder.com/450x200" alt="placeholder image"/>
+                    <img className="mw-100 d-block m-auto" src={graph} alt="Graph"/>
                 </Col>
             </Row>
         </>

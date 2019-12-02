@@ -3,6 +3,7 @@ import extremeWeather from './assets/extreme-weather.png';
 import seaLevelRise from './assets/sea-level-rise.png';
 import risingTemperatures from './assets/rising-temperatures.png';
 import summary from './assets/pdf/SHMCAP_executive_summary.pdf';
+import plan from './assets/pdf/SHMCAP-September2018-Full-Plan-web.pdf';
 import chapter1 from './assets/pdf/SHMCAP_2018_chapter1.pdf';
 import chapter2 from './assets/pdf/SHMCAP_2018_chapter2.pdf';
 import chapter3 from './assets/pdf/SHMCAP_2018_chapter3.pdf';
@@ -51,7 +52,24 @@ export const highlightFacets = [
     },
     {
         facetGroupTitle: "Extreme Weather",
-        facets: []
+        facets: [
+            {
+                title: "Severe Winter",
+                link: "/highlight/winterStorm"
+            },
+            {
+                title: "Hurricanes",
+                link: "/highlight/hurricane"
+            },
+            {
+                title: "Tornadoes",
+                link: "/highlight/tornadoes"
+            },
+            {
+                title: "Other Extreme Weather",
+                link: "/highlight/otherSevereWeather"
+            },
+        ]
     },
     {
         facetGroupTitle: "Rising Temperatures",
@@ -438,8 +456,8 @@ export const fullPlanData = [
     {
         title: "Full Plan",
         description: "",
-        file: summary,
-        size: ""
+        file: plan,
+        size: "3.5 MB"
     },
     {
         title: "Executive Summary",

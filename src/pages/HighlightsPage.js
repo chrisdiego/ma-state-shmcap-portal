@@ -84,27 +84,21 @@ const HighlightsPage = ({ match }) => {
                     <Row>
                         {
                             effects.images.map(image => 
-                                <Col xs={4}><img className="p-4" style={{maxWidth: "160px"}}src={image.src} alt={image.label} /></Col>
+                                <Col xs={4}>
+                                    <img className="p-4" style={{maxWidth: "160px"}}src={image.src} alt={image.label} />
+                                    <p className="px-4">{image.label}</p>    
+                                </Col>
                             )
                         }
                     </Row>
-                    <Row>
-                        <Col sm={8}>
-                            {
-                                effects.images.map((image, i) => 
-                                    <p className="mb-0 text-center">{i === effects.images.length - 1 ? "AND" : null} {image.label}</p>
-                                )
-                            }
-                        </Col>
-                    </Row>
-                    {
-                        effects.entries.map(entry => 
-                            <>
-                                <h5 className="text-secondary font-weight-bold my-4">{entry.title}</h5>
-                                <p>{entry.description}</p>
-                            </>
-                        )
-                    }
+                        {
+                            effects.entries.map(entry => 
+                                <>
+                                    <h5 className="text-secondary font-weight-bold my-4">{entry.title}</h5>
+                                    <p>{entry.description}</p>
+                                </>
+                            )
+                        }
                 </Col>
                 <Col sm={6} className="px-1" style={{backgroundColor: "whitesmoke"}}>
                     <h5 className="bg-secondary text-white font-weight-bold py-3 px-2 mb-0" id="exposure">EXPOSURE & VULNERABILITY BY KEY SECTOR</h5>

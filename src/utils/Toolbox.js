@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Toolbox = ({ glossary }) => {
     return (
-        <div className="toolbox px-5 py-3" style={{borderWidth: "thick", border: "3px solid #2B1E76"}}>
+        <div className="toolbox px-5 py-3 position-fixed" style={{borderWidth: "thick", border: "3px solid #2B1E76"}}>
             {glossary ? 
                 <>
                     <h5 className="text-secondary font-weight-bold">WHAT'S IN THIS SECTION:</h5>

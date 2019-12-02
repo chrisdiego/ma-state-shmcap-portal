@@ -6,7 +6,7 @@ import PageLayout from './PageLayout';
 import PDFLink from '../utils/PDFLink';
 
 //Assets
-import statehouse from '../assets/statehouse.tif';
+import statehouse from '../assets/statehouse.jpg';
 
 const CapabilitiesPage = () => {
 	const toolboxData = [
@@ -21,7 +21,7 @@ const CapabilitiesPage = () => {
 	];
 	return (
 		<PageLayout title="Current Capabilities and Adaptability" toolboxData={toolboxData}>
-        	<img className="mw-100 float-left pr-5" src={statehouse} alt="Massachusetts state house" />
+        	<img className="mw-100 float-left pr-5" style={{maxHeight: "700px"}} src={statehouse} alt="Massachusetts state house" />
         	<p>To maintain its commitment, the Commonwealth will continune to work across state government to build institutional capacity, maintain best available science and data, and develop operations and policies to adapt to changing natural hazards and the effects of climate change.  The SHMCAP evaluates the Commonwealth's existing capabilities to implement hazard mitigation and climate adaptation activities on a state-wide level, and resents agency-specific analyses of the State's capacity to adapt to changing hazards and climate conditions over time.  These results were used to create a comprehensive and effective strategy to integrate future hazard mitigation and climate change adaptation.</p>
         	<p>The Commonwealth has bolstered its long history of advancing risk reduction and resilience across the state through recent State-led initiatives to increase state and local government capacity to deal with the challenge of climate change and natural hazards.  Examples include:</p>
         	<ul className="pl-3">

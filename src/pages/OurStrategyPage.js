@@ -34,12 +34,12 @@ const OurStrategyPage = () => {
 				<img className="mw-100" src={strategyImage1} alt="SHMCAP Goals" />
 			   </Col>
 			   <Col sm={6}>
-				<p>The SHMCAP's strategy to address risks and vulnerabilities from natural hazards and climate change impacts, is guided by a mission statement and five goals, and includes a series of secific hazard mitigation and climate adaptation actions.  The process to develop these actions included extensive stakeholder engagement, reference to strategies and actions identified in local hazard mitigation plans, and development of initial actions by the Commonwealth's state agencies and Climate Change Coordinators across all Secretariats.</p>
+				<p>The SHMCAP's strategy to address risks and vulnerabilities from natural hazards and climate change impacts, is guided by a mission statement and five goals, and includes a series of specific hazard mitigation and climate adaptation actions.  The process to develop these actions included extensive stakeholder engagement, reference to strategies and actions identified in local hazard mitigation plans, and development of initial actions by the Commonwealth's state agencies and Climate Change Coordinators across all Secretariats.</p>
 				<PDFLink page="431" pdf="plan" className="btn btn-primary my-4">Want to know more?</PDFLink>
 			   </Col>
 		   </Row>
            <hr style={{borderWidth: "thick", opacity: "0.6"}} className="mt-5" />
-           <h5 id="about" className="text-secondary font-weight-bold my-4">About SHMCAP Action Tracker</h5>
+           <h5 id="about" className="text-secondary font-weight-bold my-4">About the SHMCAP Action Tracker</h5>
            <p>State agencies identified over 100 initial priority actions to increase resilince and overcome the Commonwealth's risks and vulnerabilitles related to natural hazards and projected climate changes.  The State Hazard Mitigation and Climate Adaptation Plan (SHMCAP) actions can be sorted and viewed in multiple ways.  The tracker is maintained by the State and contains a list of actions identified through the 2018 SHMCAP planning process as well as through the ongoing SHMCAP implementation process led by the Resilience Massachusetts Action Team (RMAT). Included are "global" actions that are intended to reduce risk across State government and the Commonwealth.  All actions address at least one of the primary climate change interactions and associated climate change impacts identified in the risk assessment.  Each action includes specific details, such as completion time frame, lead agency, agency priority score, and possible funding sources.</p>
            <a href="http://ma-state-action-tracker.s3-website-us-east-1.amazonaws.com/#/" target="_blank">
 		   	<img className="mw-100" src={actionTrackerImage} alt="Resilient MA Action Tracker" />

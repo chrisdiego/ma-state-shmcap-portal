@@ -30,8 +30,8 @@ const IndexPage = () => {
                     <hr style={{borderWidth: "medium", borderColor: "green", opacity: "0.3"}} className="my-4" />
                     <h5 className="text-secondary font-weight-bold mb-3">The SHMCAP</h5>
                     <ul>
-                        <li><p>Acknowledges that climate change is already worsening natural harzards and extreme weather events and integrates information and planning elements for 14 natural hazards that affect the Commonwealth</p></li>
-                        <li><p>Incorporates the best scientific data and projections available to assess risk and vulnerability associated with natural hazards and a changing climate for five key sectors - populations, government, built environment, natural resources, environment, and economy.</p></li>
+                        <li><p>Acknowledges that climate change is already worsening natural hazards and extreme weather events and integrates information and planning elements for 14 natural hazards that affect the Commonwealth</p></li>
+                        <li><p>Incorporates the best scientific data and projections available to assess risk and vulnerability associated with natural hazards and a changing climate for five key sectors - populations, government, built environment, natural resources and environment, and economy.</p></li>
                         <li><p>Evaluates the Commonwealth's existing capabilities to implement agency-specific and statewide hazard mitigation and climate adaptation activities to reduce risk and increase resilience.</p></li>
                         <li><p>Establishes a strategy for implementation and continued evolution of the plan to incorporate new information and data as they become available as well as engage relevant stakeholders.</p></li>
                     </ul>

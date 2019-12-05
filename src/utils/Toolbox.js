@@ -16,8 +16,8 @@ const Toolbox = ({ glossary }) => {
             <h5 className="text-secondary font-weight-bold">TOOLS:</h5>
             <ul className="px-3">
                 <li><a href="http://ma-state-action-tracker.s3-website-us-east-1.amazonaws.com/#/" className="text-secondary" target="_blank">SHMCAP Action Tracker</a></li>
-                <li><Link to="/placeholder" className="text-secondary">Mapping Tools</Link></li>
-                <li><Link to="/glossary" className="text-secondary">Glossary</Link></li>
+                <li><Link to="/placeholder" className="text-secondary" target="_blank">Mapping Tools</Link></li>
+                <li><Link to="/glossary" className="text-secondary" target="_blank">Glossary</Link></li>
             </ul>
         </div>
     );

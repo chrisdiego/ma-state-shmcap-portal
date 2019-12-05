@@ -19,7 +19,7 @@ const Chapter = ({ item }) => {
         <>
             <Row className="text-center text-sm-left my-3">
                 <Col sm={9}>
-                    <button className="btn btn-link p-0"><h3 className="text-secondary font-weight-bold" onClick={() => expandSection()}>{item.title}</h3></button>
+                    <button className="btn btn-link p-0 text-left"><h3 className="text-secondary font-weight-bold" onClick={() => expandSection()}>{item.title}</h3></button>
                     {expanded ? <p className="mt-3">{item.description}</p> : null}
                 </Col>
                 <Col sm={1}>

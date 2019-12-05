@@ -15,7 +15,7 @@ const TeamPage = () => {
 	const toolboxData = [
 		{
 			label: "RMAT Responsibilities",
-			href: "/action-team#resonsibilities"
+			href: "/action-team#responsibilities"
 		},
 		{
 			label: "RMAT and Agency Highlights",

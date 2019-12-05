@@ -54,7 +54,7 @@ export const highlightFacets = [
         facetGroupTitle: "Extreme Weather",
         facets: [
             {
-                title: "Severe Winter",
+                title: "Severe Winter Storm / Nor'easter",
                 link: "/highlight/winterStorm"
             },
             {
@@ -66,7 +66,7 @@ export const highlightFacets = [
                 link: "/highlight/tornadoes"
             },
             {
-                title: "Other Extreme Weather",
+                title: "Other Severe Weather",
                 link: "/highlight/otherSevereWeather"
             },
         ]
@@ -89,7 +89,7 @@ export const highlightFacets = [
         ]
     },
     {
-        facetGroupTitle: "Non-Climate Driven Hazards",
+        facetGroupTitle: "Non-Climate-Influenced Hazards",
         facets: [
             {
                 title: "Earthquakes",
@@ -104,7 +104,7 @@ export const hazardSections = [
         id: "precipitation",
         heading: "Changes in Precipitation",
         headingLink: "https://www.resilientma.org/changes/changes-in-precipitation",
-        description: "Changes in the amount, frequency, and timing of precipitation - including both rainfall - are occuring across the globe as temperatures rise and other climate patterns shift in response",
+        description: "Changes in the amount, frequency, and timing of precipitation - including both rainfall and snowfall - are occurring across the globe as temperatures rise and other climate patterns shift in response.",
         src: precipitation,
         alt: "Changes in precipitation",
         hazards: ["Inland Flooding", "Drought", "Landslide"],
@@ -128,19 +128,19 @@ export const hazardSections = [
         id: "risingTemperatures",
         heading: "Rising Temperatures",
         headingLink: "https://www.resilientma.org/changes/rising-temperatures",
-        description: "Average temperatures have risen steadily in the last 50 years, and scientists warn that the trend will continue unless greenhouse gas emissions are significantly reduced. The 9 warmest years on record all occurred in the last 2 years (2017, 2016, 2014, 2013, 2010, 2009, 2005, and 1998) according to the U.S. National Oceanographic and Atmospheric Adminitration (NOAA)",
+        description: "Average global temperatures have risen steadily in the last 50 years, and scientists warn that the trend will continue unless greenhouse gas emissions are significantly reduced. The 9 warmest years on record all occurred in the last 20 years (2017, 2016, 2015, 2014, 2013, 2010, 2009, 2005, and 1998) according to the U.S. National Oceanographic and Atmospheric Administration (NOAA).",
         src: risingTemperatures,
         alt: "Rising temperatures",
-        hazards: ["Average/Extreme Temperatures", "Wildifres", "Invasive Species"],
+        hazards: ["Average global/Extreme Temperatures", "Wildfires", "Invasive Species"],
         interactions: ["Changes in Precipitation", "Extreme Weather"],
         impacts: "Shifting seasons (longer summer, early spring, including earlier timing of spring peak flow), increase in length of growing season, increase in invasive species, ecosystem stress, energy brownouts from higher energy demands, more intense heat waves, public health impacts from high heat exposure and poor outdoor air quality, drying of streams and wetlands, eutrophication of lakes and ponds.",
-        projections: ["Average annual temperature increase up to 23% (10.8 degrees Fahrenheit)", "Days/years with daily minimum temperature below freezing: Decrease up to 42% (-62 days)", "Winter temperatures: Increase at a greater rate than spring, summer, or fall", "Long-term average minimum winter temperature: Increase up to 66% (+11.4 degrees Fahrenheit)", "Days/year with daily maximum temperature over 90 degrees Fahrenheit: Increase by up to 1,280% (+64 days)", "Growing degree days: Increase by 23% to 52%"]
+        projections: ["Average global annual temperature increase up to 23% (10.8 degrees Fahrenheit)", "Days/years with daily minimum temperature below freezing: Decrease up to 42% (-62 days)", "Winter temperatures: Increase at a greater rate than spring, summer, or fall", "Long-term Average global minimum winter temperature: Increase up to 66% (+11.4 degrees Fahrenheit)", "Days/year with daily maximum temperature over 90 degrees Fahrenheit: Increase by up to 1,280% (+64 days)", "Growing degree days: Increase by 23% to 52%"]
     },
     {
         id: "extremeWeather",
         heading: "Extreme Weather",
         headingLink: "https://www.resilientma.org/changes/extreme-weather",
-        description: "Climate change is expected to increase extreme weather events across the globe, as well as right here in Massachusetts.  There is strong evidence that storms - from heavy downpours and blizzards to tropical cyclones and hurricanes are becoming more intense and damaging, and can lead to devastating impacts for residents across the state.",
+        description: "Climate change is expected to increase extreme weather events across the globe, as well as right here in Massachusetts.  There is strong evidence that storms - from heavy downpours and blizzards to tropical cyclones and hurricanes - are becoming more intense and damaging, and can lead to devastating impacts for residents across the state.",
         src: extremeWeather,
         alt: "Extreme weather",
         hazards: ["Hurricanes/Tropical Storms", "Severe Winter Weather/Nor-easters", "Tornadoes", "Other Severe Weather"],
@@ -153,11 +153,11 @@ export const hazardSections = [
 export const glossaryData1 = [
     {
     acronym: "ASCE",
-    definition: "Board of Building Regulations and Standards"
+    definition: "American Society of Civil Engineers"
     },
     {
     acronym: "BBRS",
-    definition: "American Society of Civil Engineers"
+    definition: "Board of Building Regulations and Standards"
     },
     {
     acronym: "BMPs",
@@ -455,13 +455,13 @@ export const glossaryData2 = [
 export const fullPlanData = [
     {
         title: "Full Plan",
-        description: "",
+        description: "Read the full Massachusetts State Hazard Mitigation Program Plan",
         file: plan,
         size: "3.5 MB"
     },
     {
         title: "Executive Summary",
-        description: "",
+        description: "Read the Executive Summary of the Massachusetts State Hazard Mitigation Program Plan",
         file: summary,
         size: "3.7 MB"
     },
@@ -496,7 +496,7 @@ export const fullPlanData = [
         size: "350 kB"
     },
     {
-        title: "Chapter 6: State Capability and Adaptive Capacity Anaylsis",
+        title: "Chapter 6: State Capability and Adaptive Capacity Analysis",
         description: "This chapter of the Massachusetts State Hazard Mitigation and Climate Adaptation Plan (SHMCAP) presents an analysis of the Commonwealth of Massachusetts' current capability and capacity to address current and future risks from the impacts of climate change and hazards through existing resources. The capability and adaptive capacity analysis includes two integral components: (1) a capability assessment that evaluates the Commonwealth’s existing capabilities to enable and implement hazard mitigation and climate adaptation activities on a statewide level; and (2) an adaptive capacity analysis that is more specific to individual state agencies.",
         file: chapter6,
         size: "700 kB"
@@ -538,7 +538,7 @@ export const highlightsPageData = {
                 href: "139"
             },
             {
-                label: "Previous Occurances",
+                label: "Previous Occurrences",
                 href: "142"
             },
             {
@@ -546,7 +546,7 @@ export const highlightsPageData = {
                 href: "143"
             },
             {
-                label: "Severtiy/Extent",
+                label: "Severity/Extent",
                 href: "145"
             },
             {
@@ -583,7 +583,7 @@ export const highlightsPageData = {
                     src: risingTemperatures
                 },
                 {
-                    label: "Change in Precipitation",
+                    label: "Changes in Precipitation",
                     src: precipitation
                 }
             ],
@@ -632,7 +632,7 @@ export const highlightsPageData = {
                 href: "104"
             },
             {
-                label: "Previous Occurances",
+                label: "Previous Occurrences",
                 href: "106"
             },
             {
@@ -640,7 +640,7 @@ export const highlightsPageData = {
                 href: "108"
             },
             {
-                label: "Severtiy/Extent",
+                label: "Severity/Extent",
                 href: "108"
             },
             {
@@ -955,7 +955,7 @@ export const highlightsPageData = {
         effects: {
             images: [
                 {
-                    label: "Precipitation",
+                    label: "Changes in Precipitation",
                     src: precipitation
                 },
                 {
@@ -1147,7 +1147,7 @@ export const highlightsPageData = {
                     src: risingTemperatures
                 },
                 {
-                    label: "Precipitation",
+                    label: "Changes in Precipitation",
                     src: precipitation
                 }
             ],
@@ -1685,7 +1685,7 @@ export const highlightsPageData = {
                     src: extremeWeather
                 },
                 {
-                    label: "Precipitation",
+                    label: "Changes in Precipitation",
                     src: precipitation
                 }
             ],
@@ -1771,7 +1771,7 @@ export const highlightsPageData = {
         effects: {
             images: [
                 {
-                    label: "Precipitation",
+                    label: "Changes in Precipitation",
                     src: precipitation
                 },
                 {

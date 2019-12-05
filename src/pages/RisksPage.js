@@ -23,8 +23,8 @@ const RisksPage = () => {
 		}
 	];
 	return (
-		<PageLayout title="Risks & Vulnerabilities the Commonwealth Faces" toolboxData={toolboxData}>
-		   <p>Climate change and the anticipated exacerbation of natural hazards will affect residents, government, local communities, infrastructure, natural resources, and the private sector. The degree of exposure and consequences of these changes will vary across the Commonwealth</p>
+		<PageLayout title="Risks and Vulnerabilities the Commonwealth Faces" toolboxData={toolboxData}>
+		   <p>Climate change and the anticipated exacerbation of natural hazards will affect residents, government, local communities, infrastructure, natural resources, and the private sector. The degree of exposure and consequences of these changes will vary across the Commonwealth.</p>
 		   <PDFLink page="6" pdf="summary" className="btn btn-primary my-4">Want to know more?</PDFLink>
 		   <hr style={{borderWidth: "thick", opacity: "0.6"}} className="mt-4" />
 		   <h5 className="text-secondary font-weight-bold my-4" id="riskAssessment">Risk Assessment</h5>
@@ -76,7 +76,7 @@ const RisksPage = () => {
 				<span>Yes: 24% | No: 37% |  Don't know: 39%</span>
 			</li>
 			<li className="mt-3">
-				<b>Application of factors derived from state agency adaptative capacity responses to risk scores significantly reduced the number of “High Risk” critical items – overall 80% reduction.</b><br />
+				<b>Application of factors derived from state agency adaptive capacity responses to risk scores significantly reduced the number of “High Risk” critical items – overall 80% reduction</b><br />
 			</li>
 			<li className="mt-3">
 				<b>Top hazards with “High Vulnerability” scores based on number of critical items:</b><br />

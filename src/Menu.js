@@ -49,10 +49,10 @@ const menuContent = (menu, setActiveMenu) => {
                 <Col sm={3}>
                     <ul className="list-unstyled text-secondary font-weight-bold mx-5 mt-4 mt-sm-0">
                         <li className="mb-4">
-                            <Link to="/hazards" className="text-secondary" onClick={() => setActiveMenu(false)}>Climate change is intensifying natural hazards</Link>
+                            <Link to="/hazards" className="text-secondary" onClick={() => setActiveMenu(false)}>Climate Change is Intensifying Natural Hazards</Link>
                             </li>
                         <li className="mb-4">
-                            <Link to="/risks" className="text-secondary" onClick={() => setActiveMenu(false)}>Risk and Vulnerabilities the Commonwealth Faces</Link>
+                            <Link to="/risks" className="text-secondary" onClick={() => setActiveMenu(false)}>Risks and Vulnerabilities the Commonwealth Faces</Link>
                             </li>
                         <li className="mb-4">
                             <Link to="/capabilities" className="text-secondary" onClick={() => setActiveMenu(false)}>Current Capabilities and Adaptability</Link>

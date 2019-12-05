@@ -18,7 +18,7 @@ const Sector = ({ title, description }) => {
     return (
         <div style={{borderRadius: "5px"}} className="border py-2 px-3 mt-3 bg-white" onClick={() => toggleExpanded(!expanded)}>
             <h5 className="d-inline-block">{title}</h5>
-            <FontAwesomeIcon icon={expanded ? faCaretDown : faCaretRight} className="d-inline-block float-right" size="2x" color="#2B1E76" />
+            <FontAwesomeIcon icon={expanded ? faCaretDown : faCaretRight} style={{right: "30px"}} className="d-inline-block position-absolute" size="2x" color="#2B1E76" />
             {expanded ? <p className="mt-4">{description}</p> : null}
         </div>
     );
@@ -39,8 +39,6 @@ const HighlightsPage = ({ match }) => {
             href: `${match.url}#exposure`
         },
     ];
-
-    const pageData = highlightsPageData[match.params.hazard];
 
     const {
         type,
@@ -85,19 +83,19 @@ const HighlightsPage = ({ match }) => {
                         {
                             effects.images.map(image => 
                                 <Col xs={4}>
-                                    <img className="p-4" style={{maxWidth: "160px"}}src={image.src} alt={image.label} />
+                                    <img className="p-4 mw-100" style={{maxWidth: "160px"}}src={image.src} alt={image.label} />
                                     <p className="px-4">{image.label}</p>    
                                 </Col>
                             )
                         }
                     </Row>
                         {
-                            effects.entries.map(entry => 
+                            effects.entries.length ? effects.entries.map(entry => 
                                 <>
                                     <h5 className="text-secondary font-weight-bold my-4">{entry.title}</h5>
                                     <p>{entry.description}</p>
                                 </>
-                            )
+                            ) : <h5 className="text-center mt-5">This report does not identify any effects of climate change on the earthquake hazard in Massachusetts.</h5>
                         }
                 </Col>
                 <Col sm={6} className="px-1" style={{backgroundColor: "whitesmoke"}}>

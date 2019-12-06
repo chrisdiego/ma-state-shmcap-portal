@@ -7,8 +7,8 @@ import PDFLink from '../utils/PDFLink';
 import PageLayout from './PageLayout';
 
 //Assets
-import riskImage1 from '../assets/risk-image1.jpg';
-import riskImage2 from '../assets/risk-image2.jpg';
+import riskImage1 from '../assets/risk-image1.png';
+import riskImage2 from '../assets/risk-image2.png';
 
 
 const RisksPage = () => {

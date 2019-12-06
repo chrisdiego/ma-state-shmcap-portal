@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const ExpandableSection = ({id, heading, headingLink, description, src, alt, hazards, interactions, impacts, projections}) => {
     const [expanded, setExpanded] = useState();
@@ -22,11 +23,11 @@ const ExpandableSection = ({id, heading, headingLink, description, src, alt, haz
                     <>
                         <div className="mb-3">
                             <h6 className="font-weight-bold text-uppercase mb-0">Related Natural Hazards:</h6>
-                            {hazards.map((hazard, i) => <span className="text-primary">{hazard} {i !== hazards.length - 1 ? "|" : null} </span>)}
+                            {hazards.map((hazard, i) => <Link to={`/highlight/${hazard.link}`} className="text-primary" target="_blank">{hazard.label} {i !== hazards.length - 1 ? "|" : null} </Link>)}
                         </div>
                         <div className="mb-3">
                             <h6 className="font-weight-bold text-uppercase mb-0">Other Climate Change Interactions:</h6>
-                            {interactions.map((interaction, i) => <span className="text-primary">{interaction} {i !== interactions.length - 1 ? "|" : null} </span>)}
+                            {interactions.map((interaction, i) => <a href={interaction.link} className="text-primary" target="_blank">{interaction.label} {i !== interactions.length - 1 ? "|" : null} </a>)}
                         </div>
                         <div className="mb-3">
                             <h6 className="font-weight-bold text-uppercase">Representative Climate Change Impacts:</h6>

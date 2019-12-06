@@ -107,8 +107,30 @@ export const hazardSections = [
         description: "Changes in the amount, frequency, and timing of precipitation - including both rainfall and snowfall - are occurring across the globe as temperatures rise and other climate patterns shift in response.",
         src: precipitation,
         alt: "Changes in precipitation",
-        hazards: ["Inland Flooding", "Drought", "Landslide"],
-        interactions: ["Extreme Weather", "Rising Temperatures"],
+        hazards: [
+            {
+                label: "Inland Flooding",
+                link: "inlandFlooding"
+            },
+            {
+                label: "Drought",
+                link: "drought"
+            },
+            {
+                label: "Landslide",
+                link: "landslide"
+            }
+        ],
+        interactions: [
+            {
+                label: "Extreme Weather",
+                link: "https://www.resilientma.org/changes/extreme-weather"
+            },
+            {
+                label: "Rising Temperatures",
+                link: "https://www.resilientma.org/changes/rising-temperatures"
+            }
+        ],
         impacts: "Flash flooding, urban flooding, drainage system impacts (natural and human-made)",
         projections: ["Annual precipitation increase up to 16% (+7.3 inches)", "Days with rainfall accumulation 1+ inch: Increase up to 57% (+4 days)"]
     },
@@ -119,8 +141,34 @@ export const hazardSections = [
         description: "Climate change will drive rising sea levels, and rising seas will have wide-ranging impacts on communities, natural resources, and infrastructure along the Commonwealth's 1,519 tidal shoreline miles.",
         src: seaLevelRise,
         alt: "Sea level rise",
-        hazards: ["Coastal Erosion, Coastal Flooding, Tsunami"],
-        interactions: ["Extreme Weather, Changes in Precipitation, Extreme Precipitation"],
+        hazards: [
+            {
+                label: "Coastal Erosion",
+                link: "coastalErosion"
+            },
+            {
+                label: "Coastal Flooding",
+                link: "coastalFlooding"
+            },
+            {
+                label: "Tsunami",
+                link: "tsunami"
+            }
+        ],
+        interactions: [
+            {
+                label: "Extreme Weather",
+                link: "https://www.resilientma.org/changes/extreme-weather"
+            },
+            {
+                label: "Changes in Precipitation",
+                link: "https://www.resilientma.org/changes/changes-in-precipitation"
+            },
+            {
+                label: "Extreme Precipitation",
+                link: "https://www.resilientma.org/changes/changes-in-precipitation"
+            }
+        ],
         impacts: "Increase in tidal and coastal floods, storm surge, coastal erosion, marsh migration, inundation of coastal and marine ecosystems, loss of subsidence wetlands.",
         projections: ["Sea level: Increase by 4.0 to 10.5 feet along the Massachusetts coast."]
     },
@@ -131,8 +179,30 @@ export const hazardSections = [
         description: "Average global temperatures have risen steadily in the last 50 years, and scientists warn that the trend will continue unless greenhouse gas emissions are significantly reduced. The 9 warmest years on record all occurred in the last 20 years (2017, 2016, 2015, 2014, 2013, 2010, 2009, 2005, and 1998) according to the U.S. National Oceanographic and Atmospheric Administration (NOAA).",
         src: risingTemperatures,
         alt: "Rising temperatures",
-        hazards: ["Average global/Extreme Temperatures", "Wildfires", "Invasive Species"],
-        interactions: ["Changes in Precipitation", "Extreme Weather"],
+        hazards: [
+            {
+                label: "Average global/Extreme Temperatures",
+                link: "avgExtTemp"
+            },
+            {
+                label: "Wildfires",
+                link: "wildfires"
+            },
+            {
+                label: "Invasive Species",
+                link: "invasiveSpecies"
+            }
+        ],
+        interactions: [
+            {
+                label: "Extreme Weather",
+                link: "https://www.resilientma.org/changes/extreme-weather"
+            },
+            {
+                label: "Changes in Precipitation",
+                link: "https://www.resilientma.org/changes/changes-in-precipitation"
+            }
+        ],
         impacts: "Shifting seasons (longer summer, early spring, including earlier timing of spring peak flow), increase in length of growing season, increase in invasive species, ecosystem stress, energy brownouts from higher energy demands, more intense heat waves, public health impacts from high heat exposure and poor outdoor air quality, drying of streams and wetlands, eutrophication of lakes and ponds.",
         projections: ["Average global annual temperature increase up to 23% (10.8 degrees Fahrenheit)", "Days/years with daily minimum temperature below freezing: Decrease up to 42% (-62 days)", "Winter temperatures: Increase at a greater rate than spring, summer, or fall", "Long-term Average global minimum winter temperature: Increase up to 66% (+11.4 degrees Fahrenheit)", "Days/year with daily maximum temperature over 90 degrees Fahrenheit: Increase by up to 1,280% (+64 days)", "Growing degree days: Increase by 23% to 52%"]
     },
@@ -143,8 +213,34 @@ export const hazardSections = [
         description: "Climate change is expected to increase extreme weather events across the globe, as well as right here in Massachusetts.  There is strong evidence that storms - from heavy downpours and blizzards to tropical cyclones and hurricanes - are becoming more intense and damaging, and can lead to devastating impacts for residents across the state.",
         src: extremeWeather,
         alt: "Extreme weather",
-        hazards: ["Hurricanes/Tropical Storms", "Severe Winter Weather/Nor-easters", "Tornadoes", "Other Severe Weather"],
-        interactions: ["Rising Temperatures", "Changes in Precipitation"],
+        hazards:[
+            {
+                label: "Hurricanes/Tropical Storms",
+                link: "hurricane"
+            },
+            {
+                label: "Severe Winter Weather/Nor-easters",
+                link: "winterStorm"
+            },
+            {
+                label: "Tornadoes",
+                link: "tornadoes"
+            },
+            {
+                label: "Other Severe Weather",
+                link: "otherSevereWeather"
+            }
+        ],
+        interactions: [
+            {
+                label: "Rising Temperatures",
+                link: "https://www.resilientma.org/changes/rising-temperatures"
+            },
+            {
+                label: "Changes in Precipitation",
+                link: "https://www.resilientma.org/changes/changes-in-precipitation"
+            }
+        ],
         impacts: "Increase in frequency and intensity of extreme weather events, resulting in greater damage to natural resources, property, and infrastructure, as well as increased potential for loss of life.",
         projections: ["Frequency and magnitude: Increase"]
     },

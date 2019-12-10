@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch, faBars, faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import Menu from './Menu';
+import Search from './utils/Search';
 import logo from './assets/logo.png';
 import './sass/Heading.scss';
 
@@ -27,10 +28,7 @@ const Heading = () => {
                         </div>
                 </Link>
                 <div className="utils d-flex align-items-center">
-                    <div className="search mt-2">
-                        <FontAwesomeIcon className="mr-2" icon={faSearch}/>
-                        <input className="border-0" placeholder="SEARCH" />
-                    </div>
+                    <Search />
                 </div>
             </div>
             <div className="heading-secondary bg-primary text-white pl-sm-5 pt-3 pt-sm-0 text-center text-sm-left d-flex align-items-center justify-content-between flex-column flex-sm-row">

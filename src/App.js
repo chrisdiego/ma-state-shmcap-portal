@@ -11,6 +11,7 @@ import TeamPage from './pages/TeamPage';
 import Glossary from './pages/Glossary';
 import FullPlanPage from './pages/FullPlanPage';
 import HighlightsPage from './pages/HighlightsPage';
+import SearchResults from './pages/SearchResults';
 import './sass/App.scss';
 
 const App = () => {
@@ -44,6 +45,7 @@ const App = () => {
             <FullPlanPage />
           </Route>
           <Route path="/highlight/:hazard" component={HighlightsPage} />
+          <Route path="/search/:query" component={SearchResults} />
         </Switch>
       </HashRouter>
     </Container>

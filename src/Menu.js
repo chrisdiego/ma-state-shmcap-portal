@@ -47,7 +47,7 @@ const menuContent = (menu, setActiveMenu) => {
         return (
             <>
                 <Col sm={3}>
-                    <ul className="list-unstyled text-secondary font-weight-bold mx-5 mt-4 mt-sm-0">
+                    <ul className="list-unstyled text-secondary font-weight-bold mx-5 mt-4 mt-sm-0 text-center pt-5">
                         <li className="mb-4">
                             <Link to="/hazards" className="text-secondary" onClick={() => setActiveMenu(false)}>Climate Change is Intensifying Natural Hazards</Link>
                             </li>
@@ -69,10 +69,10 @@ const menuContent = (menu, setActiveMenu) => {
                         </Row>
                     </ul>
                 </Col>
-                <Col sm={3} className="text-primary my-4 my-sm-0 text-center text-sm-left">
+                <Col sm={3} className="text-primary my-4 my-sm-0 text-center text-sm-left pt-5">
                     <h3 className="m-0 font-weight-bold">Implementation</h3>
                     <i>Putting the plan to work</i>
-                    <ul className="text-secondary list-unstyled font-weight-bold my-4">
+                    <ul className="text-secondary list-unstyled font-weight-bold my-4 text-center">
                         <li>
                             <Link to="/our-strategy" className="text-secondary" onClick={() => setActiveMenu(false)}>Our Strategy</Link>
                             </li>
@@ -86,8 +86,8 @@ const menuContent = (menu, setActiveMenu) => {
                             <Link to="/acronyms" className="text-secondary" onClick={() => setActiveMenu(false)}>Acronyms</Link>
                             </li>
                     </ul>
-                    <a href={plan} download className="text-uppercase border-top border-primary d-block">Download Full Plan</a>
-                    <a href={summary} download className="text-uppercase border-top border-bottom border-primary d-block">Download Executive Summary</a>
+                    <a href={plan} download className="text-uppercase border-top border-primary d-block text-center">Download Full Plan</a>
+                    <a href={summary} download className="text-uppercase border-top border-bottom border-primary d-block text-center">Download Executive Summary</a>
                 </Col>
             </>
         );
@@ -110,7 +110,7 @@ const Menu = ({activeMenu, setActiveMenu}) => {
     return (
            <Transition in={activeMenu} timeout={300}>
                 {state => (
-                    <Row className="shadow align-items-center m-0" style={{...defaultStyle, ...transitionStyles[state]}}>
+                    <Row className="shadow m-0" style={{...defaultStyle, ...transitionStyles[state]}}>
                         {menuContent(activeMenu, setActiveMenu)}
                     </Row>
                 )}

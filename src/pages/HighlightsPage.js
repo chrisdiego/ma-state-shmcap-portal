@@ -44,7 +44,6 @@ const HighlightsPage = ({ match }) => {
         type,
         description,
         knowMoreLink,
-        hazardProfile,
         details,
         effects,
         sectors,
@@ -56,16 +55,6 @@ const HighlightsPage = ({ match }) => {
             <p>{description}</p>
             <PDFLink pdf="plan" page={knowMoreLink} className="btn btn-primary mt-3">Want to know more?</PDFLink>
             <hr style={{borderWidth: "thick", opacity: "0.6"}} className="my-5" />
-            <h5 className="text-secondary font-weight-bold my-4" id="profile">HAZARD PROFILE</h5>
-            <ul>
-                {
-                    hazardProfile.map(item => 
-                        <li className="mt-2">
-                            <PDFLink pdf="plan" page={item.href} className="btn btn-link p-0">{item.label}</PDFLink>
-                        </li>
-                    )
-                }
-            </ul>
             <Row className="mt-5">
                 {
                     details.map(detail =>

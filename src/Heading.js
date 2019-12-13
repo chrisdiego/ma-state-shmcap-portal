@@ -33,7 +33,7 @@ const Heading = () => {
             </div>
             <div className="heading-secondary bg-primary text-white pl-sm-5 pt-3 pt-sm-0 text-center text-sm-left d-flex align-items-center justify-content-between flex-column flex-sm-row">
                 <Link to="/" className="text-white">
-                    <h1 className="title m-0">Massachusetts <b>State Hazard Mitigation & Climate Action Plan</b></h1>
+                    <h1 className="title m-0">Massachusetts <b>State Hazard Mitigation & Climate Adaptation Plan</b></h1>
                 </Link>
                 <div className="pr-1 d-flex position-relative flex-column flex-sm-row">
                     <Link to="/full-plan" style={{borderRadius: "0"}} className="btn btn-link text-white nav-item font-weight-bold px-4 pb-sm-4 pt-4 text-decoration-none" onClick={() => setActiveMenu(false)}>

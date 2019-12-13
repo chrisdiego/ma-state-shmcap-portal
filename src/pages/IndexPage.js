@@ -40,10 +40,10 @@ const IndexPage = () => {
                             <img className="mw-100 mr-3 ml-4" src={EOPSSlogo} alt="EOPSS logo"/>
                         </Col>
                         <Col sm={3}>
-                            <img className="mw-100 mr-3" src={massdotlogo} alt="Mass DOT logo"/>
+                            <img className="mw-100 mr-3" src={laborlogo} alt="Mass DOT logo"/>
                         </Col>
                         <Col sm={4}>
-                            <img className="mw-100" src={laborlogo} alt="Labor logo"/>
+                            <img className="mw-100" src={massdotlogo} alt="Labor logo"/>
                         </Col>
                     </Row>
                     <PDFLink page="" pdf="summary" className="btn btn-primary ml-4 mt-4">Learn More</PDFLink>

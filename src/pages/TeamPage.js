@@ -6,11 +6,6 @@ import { Row, Col } from 'react-bootstrap';
 import PageLayout from './PageLayout';
 import PDFLink from '../utils/PDFLink';
 
-//Assets
-import EOPSSlogo from '../assets/EOPSSlogo.png';
-import massdotlogo from '../assets/massdotlogo.jpg';
-import laborlogo from '../assets/laborlogo.png';
-
 const TeamPage = () => {
 	const toolboxData = [
 		{
@@ -54,14 +49,9 @@ const TeamPage = () => {
 			<hr style={{borderWidth: "thick", opacity: "0.6"}} className="my-5" />
 			<h5 id="implementation" className="text-secondary font-weight-bold mt-5">Plan Implementation</h5>
 			<Row className="mx-0 align-items-center">
-				<Col sm={9} className="pl-0">
+				<Col className="pl-0">
 					<p>To maintain relevancy, evaluate progress, and improve long-term resiliency, the SHMCAP is a living document that will evolve as specific hazard mitigation, and climate adaptation actions are implemented and in response to an ongoing dialogue with stakeholders.</p>
 					<p>Effective plan implantation will be accomplished by designing implementation strategies and establishing timelines for priority  actions and by continuing to monitor, evaluate, update, and develop actions as new data and experience become available. Therefore, the responsibility for plan implementation falls on many state agencies.</p>
-				</Col>
-				<Col sm={3}>
-				<img className="mw-100 mb-3 d-block mx-auto" src={EOPSSlogo} style={{maxHeight: "200px"}} alt="EOPSS" />
-				<img className="mw-100 mb-3" src={massdotlogo} alt="Mass DOT" />
-				<img className="mw-100 mb-3" src={laborlogo} alt="Labor" />
 				</Col>
 			</Row>
 			<hr style={{borderWidth: "thick", opacity: "0.6"}} className="my-5" />

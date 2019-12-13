@@ -29,11 +29,11 @@ const OurStrategyPage = () => {
 	return (
 		<PageLayout title="Our Strategy" toolboxData={toolboxData}>
 			<h3 id="shmcapGoals" className="text-secondary mb-5">SHMCAP Goals</h3>
-            <Row className="align-items-center">
+            <Row>
 			   <Col sm={6}>
 				<img className="mw-100" style={{maxHeight: "900px"}} src={strategyImage1} alt="SHMCAP Goals" />
 			   </Col>
-			   <Col sm={6}>
+			   <Col sm={6} className="pt-sm-4">
 				<p>The SHMCAP's strategy to address risks and vulnerabilities from natural hazards and climate change impacts, is guided by a mission statement and five goals, and includes a series of specific hazard mitigation and climate adaptation actions.  The process to develop these actions included extensive stakeholder engagement, reference to strategies and actions identified in local hazard mitigation plans, and development of initial actions by the Commonwealth's state agencies and Climate Change Coordinators across all Secretariats.</p>
 				<PDFLink page="431" pdf="plan" className="btn btn-primary my-4">Want to know more?</PDFLink>
 			   </Col>

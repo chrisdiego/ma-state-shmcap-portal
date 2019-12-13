@@ -32,7 +32,7 @@ const RisksPage = () => {
 			   <Col sm={6}>
 				<img className="mw-100" src={riskImage1} alt="placeholder image" />
 			   </Col>
-			   <Col sm={6}>
+			   <Col sm={6} className="pt-4" style={{backgroundColor: "whitesmoke"}}>
 				<p>The risk assessment includes information from almost 80 state agency climate change vulnerability assessments undertaken during development of this plan as a key requirement of Executve Order 569. Vulnerability to climate change is a function of exposure, sensitivity, and adaptive capacity.</p>
 				<PDFLink page="90" pdf="plan" className="btn btn-primary my-4">Want to know more?</PDFLink>
 			   </Col>

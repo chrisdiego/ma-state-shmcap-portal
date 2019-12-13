@@ -83,7 +83,7 @@ const menuContent = (menu, setActiveMenu) => {
                             <a className="text-secondary" href="http://ma-state-action-tracker.s3-website-us-east-1.amazonaws.com/#/" target="_blank">SHMCAP Action Tracker</a>
                             </li>
                         <li>
-                            <Link to="/glossary" className="text-secondary" onClick={() => setActiveMenu(false)}>Glossary</Link>
+                            <Link to="/acronyms" className="text-secondary" onClick={() => setActiveMenu(false)}>Acronyms</Link>
                             </li>
                     </ul>
                     <a href={plan} download className="text-uppercase border-top border-primary d-block">Download Full Plan</a>

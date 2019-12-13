@@ -16,7 +16,7 @@ const ExpandableSection = ({id, heading, headingLink, description, src, alt, haz
             </Col>
             <Col sm={10}>
                 <a className="btn btn-link p-0 text-secondary" href={headingLink} target="_blank" id={id}>
-                    <h5 className={`${expanded ? "text-primary" : "text-secondary"} font-weight-bold`}>{heading}</h5>
+                    <h5 className="text-primary font-weight-bold">{heading}</h5>
                 </a>
                 <p>{description}</p>
                 {expanded ? 

@@ -38,7 +38,7 @@ const App = () => {
           <Route path="/action-team" exact>
             <TeamPage />
           </Route>
-          <Route path="/glossary" exact>
+          <Route path="/acronyms" exact>
             <Glossary />
           </Route>
           <Route path="/full-plan" exact>

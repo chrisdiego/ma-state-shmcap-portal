@@ -23,7 +23,7 @@ const mapData = (data) => {
 
 const Glossary = () => {
     return (
-        <PageLayout title="Glossary">
+        <PageLayout title="Acronyms">
             <Row className="mx-0">
                 <Col sm={6}>
                     {mapData(glossaryData1)}

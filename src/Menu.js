@@ -3,6 +3,9 @@ import { Row, Col } from 'react-bootstrap';
 import { Transition } from 'react-transition-group';
 import { highlightFacets } from './data.js'
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+import ReactHtmlParser from 'react-html-parser';
 import Chevron from './utils/Chevron.js';
 import summary from './assets/pdf/SHMCAP_executive_summary.pdf';
 import plan from './assets/pdf/SHMCAP-September2018-Full-Plan-web.pdf';
@@ -26,10 +29,10 @@ const FacetGroup = ({group, setActiveMenu}) => {
       }
 
     return (
-        <Col sm={4}>
+        <Col sm={4} className="px-2">
             <li className="mb-3">
-                <div className="border-bottom border-primary facetGroupTitle d-flex mb-1" onClick={toggleCollapse}>
-                    <h6 className="m-0 text-left text-secondary font-weight-bold">{group.facetGroupTitle}</h6>
+                <div className="border-bottom border-primary facetGroupTitle d-flex mb-1" style={{minHeight: "35px"}} onClick={toggleCollapse}>
+                    <h6 className="m-0 text-left text-secondary font-weight-bold">{ReactHtmlParser(group.facetGroupTitle)}</h6>
                     <Chevron className={setRotate} width={15} fill={"#2B1E76"} />
                 </div>
                 <div className={`${setActive} facetGroupList`} ref={facetGroupContent} style={{ maxHeight: `${setHeight}` }}>
@@ -48,15 +51,20 @@ const menuContent = (menu, setActiveMenu) => {
             <>
                 <Col sm={3}>
                     <ul className="list-unstyled text-secondary font-weight-bold mx-5 mt-4 mt-sm-0 text-center pt-5">
+                        <li className="text-left mb-4">
+                            <Link to="/" onClick={() => setActiveMenu(false)}>
+                                <FontAwesomeIcon className="mr-5" style={{color: "#2B1E76"}} icon={faHome} size={"3x"}/>
+                            </Link>
+                        </li>
                         <li className="mb-4">
                             <Link to="/hazards" className="text-secondary" onClick={() => setActiveMenu(false)}>Climate Change is Intensifying Natural Hazards</Link>
-                            </li>
+                        </li>
                         <li className="mb-4">
                             <Link to="/risks" className="text-secondary" onClick={() => setActiveMenu(false)}>Risks and Vulnerabilities the Commonwealth Faces</Link>
-                            </li>
+                        </li>
                         <li className="mb-4">
                             <Link to="/capabilities" className="text-secondary" onClick={() => setActiveMenu(false)}>Current Capabilities and Adaptability</Link>
-                            </li>
+                        </li>
                     </ul>
                 </Col>
                 <Col sm={6} className="text-center pt-5" style={{backgroundColor: "#F2F2F2"}}>

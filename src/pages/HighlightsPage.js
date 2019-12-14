@@ -27,10 +27,6 @@ const Sector = ({ title, description }) => {
 const HighlightsPage = ({ match }) => {
     const toolboxData = [
         {
-            label: "Hazard Profile",
-            href: `${match.url}#profile`
-        },
-        {
             label: "Potential Effects of Climate Change",
             href: `${match.url}#effects`
         },
@@ -53,7 +49,7 @@ const HighlightsPage = ({ match }) => {
     return (
         <PageLayout title={type} toolboxData={toolboxData}>   
             <p>{description}</p>
-            <PDFLink pdf="plan" page={knowMoreLink} className="btn btn-primary mt-3">Want to know more?</PDFLink>
+            <PDFLink pdf="plan" page={knowMoreLink} className="btn btn-primary mt-3">Full Hazard Profile</PDFLink>
             <hr style={{borderWidth: "thick", opacity: "0.6"}} className="my-5" />
             <Row className="mt-5">
                 {
@@ -92,7 +88,7 @@ const HighlightsPage = ({ match }) => {
                     <div className="p-3">
                         {sectors.map(sector => <Sector title={sector.title} description={sector.description} />)}
                     </div>
-                    <PDFLink pdf="plan" page={sectorLink} className="btn btn-primary mx-3 my-4">Want to know more?</PDFLink>
+                    <PDFLink pdf="plan" page={sectorLink} className="btn btn-primary mx-3 my-4">Full Hazard Profile</PDFLink>
                 </Col>
             </Row>
         </PageLayout>

@@ -1,3 +1,4 @@
+import React from 'react';
 import precipitation from './assets/changes-in-precipitation.png';
 import extremeWeather from './assets/extreme-weather.png';
 import seaLevelRise from './assets/sea-level-rise.png';
@@ -34,7 +35,7 @@ export const highlightFacets = [
         ]
     },
     {
-        facetGroupTitle: "Sea Level Rise",
+        facetGroupTitle: "Sea Level <br /> Rise",
         facets: [
             {
                 title: "Coastal Flooding",
@@ -51,7 +52,7 @@ export const highlightFacets = [
         ]
     },
     {
-        facetGroupTitle: "Extreme Weather",
+        facetGroupTitle: "Extreme <br /> Weather",
         facets: [
             {
                 title: "Severe Winter Storm / Nor'easter",
@@ -89,7 +90,7 @@ export const highlightFacets = [
         ]
     },
     {
-        facetGroupTitle: "Non-Climate-Influenced Hazards",
+        facetGroupTitle: "Non-Climate Influenced Hazards",
         facets: [
             {
                 title: "Earthquakes",
@@ -131,8 +132,8 @@ export const hazardSections = [
                 link: "https://www.resilientma.org/changes/rising-temperatures"
             }
         ],
-        impacts: "Flash flooding, urban flooding, drainage system impacts (natural and human-made)",
-        projections: ["Annual precipitation increase up to 16% (+7.3 inches)", "Days with rainfall accumulation 1+ inch: Increase up to 57% (+4 days)"]
+        impacts: "Flash flooding, urban flooding, drainage system impacts (natural and human-made), lack of groundwater recharge, impacts to drinking water supply, public health impacts from mold and worsened indoor air quality, vector-borne diseases from stagnant water, episodic drought, changes in snow-rain ratios, changes in extent and duration of snow cover, and degradation of stream channels and wetlands.",
+        projections: ["Annual precipitation increase up to 16% (+7.3 inches)", "Days with rainfall accumulation 1+ inch: Increase up to 57% (+4 days)", "Consecutive dry days: Increase 18% (+3 days)", "Summer precipitation: Decrease"]
     },
     {
         id: "seaLevelRise",
@@ -165,12 +166,12 @@ export const hazardSections = [
                 link: "https://www.resilientma.org/changes/changes-in-precipitation"
             },
             {
-                label: "Extreme Precipitation",
-                link: "https://www.resilientma.org/changes/changes-in-precipitation"
+                label: "Rising Temperatures",
+                link: "https://www.resilientma.org/changes/rising-temperatures"
             }
         ],
-        impacts: "Increase in tidal and coastal floods, storm surge, coastal erosion, marsh migration, inundation of coastal and marine ecosystems, loss of subsidence wetlands.",
-        projections: ["Sea level: Increase by 4.0 to 10.5 feet along the Massachusetts coast."]
+        impacts: "Increase in tidal and coastal floods, storm surge, coastal erosion, marsh migration, inundation of coastal and marine ecosystems, loss and subsidence of wetlands.",
+        projections: ["Sea level: Increase 4.0 to 10.5 feet along the Massachusetts coast."]
     },
     {
         id: "risingTemperatures",
@@ -204,7 +205,7 @@ export const hazardSections = [
             }
         ],
         impacts: "Shifting seasons (longer summer, early spring, including earlier timing of spring peak flow), increase in length of growing season, increase in invasive species, ecosystem stress, energy brownouts from higher energy demands, more intense heat waves, public health impacts from high heat exposure and poor outdoor air quality, drying of streams and wetlands, eutrophication of lakes and ponds.",
-        projections: ["Average global annual temperature increase up to 23% (10.8 degrees Fahrenheit)", "Days/years with daily minimum temperature below freezing: Decrease up to 42% (-62 days)", "Winter temperatures: Increase at a greater rate than spring, summer, or fall", "Long-term Average global minimum winter temperature: Increase up to 66% (+11.4 degrees Fahrenheit)", "Days/year with daily maximum temperature over 90 degrees Fahrenheit: Increase by up to 1,280% (+64 days)", "Growing degree days: Increase by 23% to 52%"]
+        projections: ["Average global annual temperature increase up to 23% (10.8 degrees Fahrenheit)", "Days/years with daily minimum temperature below freezing: Decrease up to 42% (-62 days)", "Winter temperatures: Increase at a greater rate than spring, summer, or fall", "Long-term average minimum winter temperature: Increase up to 66% (+11.4 degrees Fahrenheit)", "Days/year with daily maximum temperature over 90 degrees Fahrenheit: Increase by up to 1,280% (+64 days)", "Growing degree days: Increase by 23% to 52%"]
     },
     {
         id: "extremeWeather",

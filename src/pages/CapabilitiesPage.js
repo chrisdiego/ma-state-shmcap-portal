@@ -28,10 +28,14 @@ const CapabilitiesPage = () => {
 					<PDFLink page="395" pdf="plan">Fiscal Year 2019 Capital Investment Plan</PDFLink>
 				</li>
 				<li className="text-primary mb-2">
-					<a href="https://www.mass.gov/service-details/coastal-resilience-grant-program" target="_blank">Coastal Resilience Grant Program expansion</a>
+					<a href="https://www.mass.gov/news/governor-baker-signs-legislation-directing-24-billion-to-climate-change-adaptation" target="_blank">Environmental Bond Bill signed into law August 2018</a>
+				</li>
+				
+				<li className="text-primary mb-2">
+					<a href="https://www.mass.gov/service-details/coastal-resilience-grant-program" target="_blank">Coastal Resilience Grant Program expansions</a>
 				</li>
 				<li className="text-primary mb-2">
-					<a href="https://resilientma.org/mvp" target="_blank">Municipal Vulnerability Preparedness program growth</a>
+					<a href="https://resilientma.org/mvp" target="_blank">Municipal Vulnerability Preparedness Program growth</a>
 				</li>
         	</ul>
 			<PDFLink page="393" pdf="plan" className="btn btn-primary">Want to know more?</PDFLink>

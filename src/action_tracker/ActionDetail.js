@@ -47,16 +47,17 @@ const ActionDetail = ({}) => {
             }
         })).then(result => {
             const order = [
+                "Global Action",
+                "Completion Timeframe",
                 "Action Types",
                 "Action Status",
                 "Executive Office",
                 "Lead Agency",
                 "Partner(s)",
                 "Agency Priority Score",
-                "Possible Funding Sources",
                 "SHMCAP Goal(s)",
+                "Possible Funding Sources",
                 "Primary Climate Change Interaction(s)",
-                "Global Action",
                 "Progress Notes"
             ];
 
@@ -146,14 +147,6 @@ const ActionDetail = ({}) => {
         );
     }
 
-    const completionTimeframe = () => {
-        const timeFrame = actionDetails.find(detail => detail.title === "Completion Timeframe");
-        return (
-            <h4 className="text-primary font-weight-bold">
-                Completion Timeframe: {timeFrame !== undefined ? timeFrame.timeframe : null}
-            </h4>
-        );
-    }
   return (
     <div style={{background: 'white', position: 'absolute', top: 0, left:0, right: 0, bottom: 0}}>
         <Heading closeButton
@@ -162,8 +155,6 @@ const ActionDetail = ({}) => {
         <Row className="mt-3 mt-sm-0">
             <Col xs={12} className="p-sm-5 text-center text-sm-left text-secondary">
                 <h1>{actionItem.title}</h1>
-                {/* will need a separate function to pull completion timeframe from actionDetails first */}
-                {completionTimeframe()}
                 <h4 className="mt-4"><b>Action Description:</b></h4>
                 <span>{actionItem.description}</span>
                 <ul className="list-unstyled">

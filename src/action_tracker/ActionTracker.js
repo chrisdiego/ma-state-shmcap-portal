@@ -23,33 +23,43 @@ const ActionTracker = ({}) => {
   const history = useHistory();
 
   const filterGroupDetails = {
-    "/action-statuses": {
-      title:  "Status",
-      filter_key: "action_status_id"
+    "/global-actions": {
+      title: "Global Action",
+      filter_key: "global_action_id",
+    },
+    "/completion-timeframes":  {
+      title: "Completion Timeframe",
+      filter_key: "completion_timeframe_id",
     },
     "/action-types":  {
       title: "Action Type",
       filter_key: "action_type_ids",
     },
-    "/agency-priorities": {
-      title: "Agency Priority Score",
-      filter_key: "agency_priority_id",
+    "/action-statuses": {
+      title:  "Status",
+      filter_key: "action_status_id"
     },
     "/exec-offices": {
       title: "Executive Office",
       filter_key: "exec_office_id",
+    },
+    "/agency-priorities": {
+      title: "Agency Priority Score",
+      filter_key: "agency_priority_id",
+    },
+    "/shmcap-goals": {
+      title: "SHMCAP Goal",
+      filter_key: "shmcap_goal_ids"
+    },
+    "/primary-climate-interactions": {
+      title: "Primary Climate Interaction",
+      filter_key: "primary_climate_interaction_ids",
     },
     /*
     "/funding-sources": {
       title: "Funding Source",
       filter_key: "funding_source_ids",
     },
-    */
-    "/global-actions": {
-      title: "Global Action",
-      filter_key: "global_action_id",
-    },
-    /*
     "/lead-agencies": {
       title: "Lead Agencies",
       filter_key: "lead_agency_id",
@@ -59,14 +69,6 @@ const ActionTracker = ({}) => {
       filter_key: "partner_ids",
     },
     */
-    "/primary-climate-interactions": {
-      title: "Primary Climate Interaction",
-      filter_key: "primary_climate_interaction_ids",
-    },
-    "/shmcap-goals": {
-      title: "SHMCAP Goal",
-      filter_key: "shmcap_goal_ids"
-    },
   };
 
   //this object exists for routes and so a title for the filter group can be associated with a specific route
@@ -82,13 +84,15 @@ const ActionTracker = ({}) => {
           filterGroupDetails[route],
           {
             data: filters.data.map((d) => {
-              d.computed_name = (d.type || d.status || d.name || d.action);
+              console.log(d)
+              d.computed_name = (d.type || d.status || d.name || d.action || d.timeframe);
               d.display_name = d.computed_name.trim();
               return d;
             })
           });
         });
       })).then(data => {
+        console.log(data)
         setFilterCategories(data)
       })
   };

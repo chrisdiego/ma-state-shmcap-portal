@@ -1,4 +1,3 @@
-import React from 'react';
 import precipitation from './assets/changes-in-precipitation.png';
 import extremeWeather from './assets/extreme-weather.png';
 import seaLevelRise from './assets/sea-level-rise.png';

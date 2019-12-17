@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import logo_img from './assets/logo.png';
 import './ResilientMAHeader.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -158,8 +159,8 @@ class MegaMenu extends Component {
                   <section className='col col-sm-4 no-pad-r'>
                     <h3>State Hazard Mitigation and Climate Adaptation Plan:</h3>
                     <ul>
-                      <li><a href='/shmcap-portal' onClick={(e) => window.location.href = e.target['href']}>Our Plan </a></li>
-                      <li><a href='/state-action-tracker' onClick={(e) => window.location.href = e.target['href']}>Massachusetts State Action Tracker </a></li>
+                      <li><Link to='/'>Our Plan </Link></li>
+                      <li><Link to='/action-tracker'>Massachusetts State Action Tracker </Link></li>
                     </ul>
                   </section>
                   <section className='col col-sm-4 no-pad-r'>

@@ -6,7 +6,7 @@ import Menu from './Menu';
 import Search from './utils/Search';
 import ResilientMAHeader from './ResilientMAHeader';
 import logo from './assets/logo.png';
-import './sass/Heading.scss';
+import './action_tracker/sass/Heading.scss';
 
 const Heading = () => {
     const [activeMenu, setActiveMenu] = useState(false);

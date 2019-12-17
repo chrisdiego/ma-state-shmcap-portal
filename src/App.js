@@ -12,7 +12,11 @@ import Glossary from './pages/Glossary';
 import FullPlanPage from './pages/FullPlanPage';
 import HighlightsPage from './pages/HighlightsPage';
 import SearchResults from './pages/SearchResults';
+import ActionTracker from './action_tracker/ActionTracker';
+import ActionDetail from './action_tracker/ActionDetail';
+import Contact from './action_tracker/Contact';
 import './sass/App.scss';
+import './action_tracker/sass/ActionTracker.scss'
 
 const App = () => {
   return (
@@ -46,6 +50,15 @@ const App = () => {
           </Route>
           <Route path="/highlight/:hazard" component={HighlightsPage} />
           <Route path="/search/:query" component={SearchResults} />
+          <Route path="/action-tracker/contact">
+            <Contact />
+          </Route>
+          <Route path="/action-tracker/detail/:id">
+            <ActionDetail />
+          </Route>
+          <Route path="/action-tracker">
+            <ActionTracker />
+          </Route>
         </Switch>
       </HashRouter>
     </Container>

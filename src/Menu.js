@@ -50,7 +50,7 @@ const menuContent = (menu, setActiveMenu) => {
         return (
             <>
                 <Col sm={3}>
-                    <ul className="list-unstyled text-secondary font-weight-bold mx-5 mt-4 mt-sm-0 text-center pt-5">
+                    <ul className="list-unstyled text-secondary font-weight-bold mx-5 mt-4 mt-sm-0 no-text-center pt-5">
                         <li className="text-left mb-4">
                             <Link to="/" onClick={() => setActiveMenu(false)}>
                                 <FontAwesomeIcon className="mr-5" style={{color: "#2B1E76"}} icon={faHome} size={"3x"}/>
@@ -67,8 +67,8 @@ const menuContent = (menu, setActiveMenu) => {
                         </li>
                     </ul>
                 </Col>
-                <Col sm={6} className="text-center pt-5" style={{backgroundColor: "#F2F2F2"}}>
-                    <h3 className="text-center text-sm-left text-secondary font-weight-bold mb-4 text-left ml-sm-5">View Plan Highlights by</h3>
+                <Col sm={6} className="no-text-center pt-5" style={{backgroundColor: "#F2F2F2"}}>
+                    <h3 className="no-text-center text-sm-left text-secondary font-weight-bold mb-4 text-left ml-sm-5">View Plan Highlights by</h3>
                     <ul className="list-unstyled">
                         <Row className="px-5">
                             {highlightFacets.map(group => (
@@ -77,10 +77,10 @@ const menuContent = (menu, setActiveMenu) => {
                         </Row>
                     </ul>
                 </Col>
-                <Col sm={3} className="text-primary my-4 my-sm-0 text-center text-sm-left pt-5">
+                <Col sm={3} className="text-primary my-4 my-sm-0 no-text-center text-sm-left pt-5">
                     <h3 className="m-0 font-weight-bold">Implementation</h3>
                     <i>Putting the plan to work</i>
-                    <ul className="text-secondary list-unstyled font-weight-bold my-4 text-center">
+                    <ul className="text-secondary list-unstyled font-weight-bold my-4 no-text-center">
                         <li>
                             <Link to="/our-strategy" className="text-secondary" onClick={() => setActiveMenu(false)}>Our Strategy</Link>
                             </li>
@@ -94,8 +94,8 @@ const menuContent = (menu, setActiveMenu) => {
                             <Link to="/acronyms" className="text-secondary" target="" onClick={() => setActiveMenu(false)}>Acronyms</Link>
                         </li>
                     </ul>
-                    <a href={plan} download className="text-uppercase border-top border-primary d-block text-center">Download Full Plan</a>
-                    <a href={summary} download className="text-uppercase border-top border-bottom border-primary d-block text-center">Download Executive Summary</a>
+                    <a href={plan} download className="text-uppercase border-top border-primary d-block no-text-center">Download Full Plan</a>
+                    <a href={summary} download className="text-uppercase border-top border-bottom border-primary d-block no-text-center">Download Executive Summary</a>
                 </Col>
             </>
         );

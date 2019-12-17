@@ -18,7 +18,7 @@ import chapter10 from './assets/pdf/SHMCAP_2018_chapter10.pdf';
 
 export const highlightFacets = [
     {
-        facetGroupTitle: "Changes in Precipitation",
+        facetGroupTitle: "Changes in <br /> Precipitation",
         facets: [
             {
                 title: "Inland Flooding",
@@ -73,7 +73,7 @@ export const highlightFacets = [
         ]
     },
     {
-        facetGroupTitle: "Rising Temperatures",
+        facetGroupTitle: "Rising <br /> Temperatures",
         facets: [
             {
                 title: "Average/Extreme Temperatures",
@@ -90,7 +90,7 @@ export const highlightFacets = [
         ]
     },
     {
-        facetGroupTitle: "Non-Climate Influenced Hazards",
+        facetGroupTitle: "Non-Climate <br /> Influenced Hazards",
         facets: [
             {
                 title: "Earthquakes",

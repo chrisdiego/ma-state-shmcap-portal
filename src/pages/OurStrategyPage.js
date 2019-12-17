@@ -49,13 +49,10 @@ const OurStrategyPage = () => {
            <hr style={{borderWidth: "thick", opacity: "0.6"}} className="mt-5" />
            <h5 id="nbs" className="text-secondary font-weight-bold my-4">Importance of Nature-Based Solutions in Hazard Mitigation and Climate Adaptation</h5>
            <img className="mw-100 mb-4" src={solutions} alt="Nature Based Solutions" />
-		   <ul>
-			   <li><p>Nature-based solutions (NBS) are defined as:</p></li>
-			   <li><p>The conservation, enhancement, and restoration of nature to reduce emissions, and enhance resiliency.  These types of solutions use natural systems, mimic natural processes, or work in tandem with traditional engineering approaches to address natural hazards like flooding, erosion, drought, and heat islands.</p></li>
-			   <li><p>NBS offer numerous co-benefits, including minimizing costs, improving water quality, and enhancing quality of life.</p></li>
-			   <li><p>NBS should be considered at an ecosystem scale to prioritize the most effective solutions and locations.</p></li>
-		   </ul>
-           
+			<p>Nature-based solutions (NBS) are defined as:</p>
+			<p>The conservation, enhancement, and restoration of nature to reduce emissions, and enhance resiliency.  These types of solutions use natural systems, mimic natural processes, or work in tandem with traditional engineering approaches to address natural hazards like flooding, erosion, drought, and heat islands.</p>
+			<p>NBS offer numerous co-benefits, including minimizing costs, improving water quality, and enhancing quality of life.</p>
+			<p>NBS should be considered at an ecosystem scale to prioritize the most effective solutions and locations.</p>           
            
            
            

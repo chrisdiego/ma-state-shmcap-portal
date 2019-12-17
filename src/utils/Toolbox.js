@@ -15,11 +15,7 @@ const Toolbox = ({ glossary }) => {
             }
             <h5 className="text-secondary font-weight-bold">TOOLS:</h5>
             <ul className="px-3">
-<<<<<<< HEAD
-                <li><Link to="/action-tracker" className="text-secondary">SHMCAP Action Tracker</Link></li>
-=======
                 <li><Link to="/action-tracker" className="text-secondary" >SHMCAP Action Tracker</Link></li>
->>>>>>> f6bcaa29dd6a847173ef2189aee5287de38d900d
                 <li><a href="https://www.resilientma.org/data/maps" className="text-secondary" target="_blank">Mapping Tools</a></li>
                 <li><Link to="/acronyms" className="text-secondary" target="_blank">Acronyms</Link></li>
             </ul>

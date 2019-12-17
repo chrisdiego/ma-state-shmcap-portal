@@ -1,0 +1,28 @@
+.clearinghouse-collection {
+  clear: both;
+}
+.clearinghouse-collection ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 0;
+  justify-content: space-around;
+}
+.clearinghouse-collection ul > li {
+  display: flex;
+  flex: 0 0 250px;
+}
+.clearinghouse-collection .resource {
+  flex-direction: column;
+  position: relative;
+}
+
+.clearinghouse-collection .resource label {
+}
+.clearinghouse-collection .resource .img-link {
+  text-align:center;
+}
+.clearinghouse-collection .resource img {
+  max-width: 100%;
+  min-width: 100%;
+}

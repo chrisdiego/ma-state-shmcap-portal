@@ -19,22 +19,7 @@ const Heading = () => {
 
     return (
         <div className="heading">
-            { isFramed() ? <ResilientMAHeader /> :
-              <div className="heading-primary d-flex align-items-center justify-content-between flex-column flex-sm-row my-3 mx-3 mx-sm-5">
-                  <Link className="d-flex align-items-center text-decoration-none" to="/">
-                      <img className="mr-3 logo" src={logo} alt="logo" />
-                          <div>
-                              <h1 className="m-0">
-                                  <span className="text-secondary">resilient</span>
-                                  <strong className="orange-text"> MA </strong>
-                              </h1>
-                              <small className="tagline text-secondary">Climate Change Clearinghouse for the Commonwealth</small>
-                          </div>
-                  </Link>
-                  <div className="utils d-flex align-items-center">
-                      <Search />
-                  </div>
-              </div>}
+            <ResilientMAHeader />
             <div className="heading-secondary bg-primary text-white pl-sm-5 pt-3 pt-sm-0 text-center text-sm-left d-flex align-items-center justify-content-between flex-column flex-sm-row">
                 <Link to="/" className="text-white">
                     <h1 className="title m-0">Massachusetts <b>State Hazard Mitigation & Climate Adaptation Plan</b></h1>

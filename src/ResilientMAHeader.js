@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import logo_img from './assets/logo.png';
 import './ResilientMAHeader.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -78,7 +77,7 @@ class SearchBarComponent extends Component {
 const SearchBar = withRouter(SearchBarComponent);
 
 const Logo = (props) =>
-  <Link to='/' className='logo'>
+  <a href='/' className='logo'>
     <img className='hidden-sm-down' src={logo_img} alt="logo" />
     <div className='logo-text slate-text'>
       <h1>
@@ -89,7 +88,7 @@ const Logo = (props) =>
         Climate Change Clearinghouse for the Commonwealth
       </small>
     </div>
-  </Link>;
+  </a>;
 
 class MegaMenu extends Component {
   render() {
@@ -97,16 +96,16 @@ class MegaMenu extends Component {
         <div className='container'>
           <div className='row' onClick={(e) => this.props.onClick(e)}>
             <header>
-              <h1> <Link to='/about'>Supporting the Commonwealth through up-to-date climate change science: </Link></h1>
+              <h1> <a href='/about' onClick={(e) => window.location.href = "/about"}>Supporting the Commonwealth through up-to-date climate change science: </a></h1>
             </header>
             <nav className='row'>
               <section className='col tool-n-data-col'>
                 <h2> Tools & Data</h2>
                 <hr/>
-                <h3><Link to='/data/documents'>Documents</Link></h3>
-                <h3><Link to='/data/data'>Data</Link></h3>
-                <h3><Link to='/data/maps'>Maps</Link></h3>
-                <h3><Link to='/search'>Resource Clearinghouse</Link></h3>
+                <h3><a href='/data/documents' onClick={(e) => window.location.href = e.target['href']}>Documents</a></h3>
+                <h3><a href='/data/data' onClick={(e) => window.location.href = e.target['href']}>Data</a></h3>
+                <h3><a href='/data/maps' onClick={(e) => window.location.href = e.target['href']}>Maps</a></h3>
+                <h3><a href='/search' onClick={(e) => window.location.href = e.target['href']}>Resource Clearinghouse</a></h3>
               </section>
               <section className='col learn-col col-xs-12'>
                 <h2>Learn</h2>
@@ -115,33 +114,33 @@ class MegaMenu extends Component {
                   <section className='col col-sm-4 no-pad-r'>
                     <h3>Explore Sectors:</h3>
                     <ul>
-                      <li><Link to='/sectors/agriculture'>Agriculture</Link></li>
-                      <li><Link to='/sectors/coastal-zones'>Coastal Zones</Link></li>
-                      <li><Link to='/sectors/economy'>Economy</Link></li>
-                      <li><Link to='/sectors/energy'>Energy</Link></li>
-                      <li><Link to='/sectors/forestry'>Forestry</Link></li>
-                      <li><Link to='/sectors/infrastructure'>Infrastructure</Link></li>
-                      <li><Link to='/sectors/local-government'>Local Government</Link></li>
+                      <li><a href='/sectors/agriculture' onClick={(e) => window.location.href = e.target['href']}>Agriculture</a></li>
+                      <li><a href='/sectors/coastal-zones' onClick={(e) => window.location.href = e.target['href']}>Coastal Zones</a></li>
+                      <li><a href='/sectors/economy' onClick={(e) => window.location.href = e.target['href']}>Economy</a></li>
+                      <li><a href='/sectors/energy' onClick={(e) => window.location.href = e.target['href']}>Energy</a></li>
+                      <li><a href='/sectors/forestry' onClick={(e) => window.location.href = e.target['href']}>Forestry</a></li>
+                      <li><a href='/sectors/infrastructure' onClick={(e) => window.location.href = e.target['href']}>Infrastructure</a></li>
+                      <li><a href='/sectors/local-government' onClick={(e) => window.location.href = e.target['href']}>Local Government</a></li>
                     </ul>
                   </section>
                   <section className='col col-sm-4 no-pad-r'>
                     <h3>&nbsp;</h3>
                     <ul>
-                      <li><Link to='/sectors/natural-resources-habitats'>Natural Resources / Habitats</Link></li>
-                      <li><Link to='/sectors/public-health'>Public Health</Link></li>
-                      <li><Link to='/sectors/public-safety-emergency-response'>Public Safety / Emergency Response</Link></li>
-                      <li><Link to='/sectors/recreation'>Recreation</Link></li>
-                      <li><Link to='/sectors/transportation'>Transportation</Link></li>
-                      <li><Link to='/sectors/water-resources'>Water Resources</Link></li>
+                      <li><a href='/sectors/natural-resources-habitats' onClick={(e) => window.location.href = e.target['href']}>Natural Resources / Habitats</a></li>
+                      <li><a href='/sectors/public-health' onClick={(e) => window.location.href = e.target['href']}>Public Health</a></li>
+                      <li><a href='/sectors/public-safety-emergency-response' onClick={(e) => window.location.href = e.target['href']}>Public Safety / Emergency Response</a></li>
+                      <li><a href='/sectors/recreation' onClick={(e) => window.location.href = e.target['href']}>Recreation</a></li>
+                      <li><a href='/sectors/transportation' onClick={(e) => window.location.href = e.target['href']}>Transportation</a></li>
+                      <li><a href='/sectors/water-resources' onClick={(e) => window.location.href = e.target['href']}>Water Resources</a></li>
                     </ul>
                   </section>
                   <section className='col col-sm-4 no-pad-r'>
                     <h3>Identify Changes:</h3>
                     <ul>
-                      <li><Link to='/changes/sea-level-rise'>Sea Level Rise</Link></li>
-                      <li><Link to='/changes/extreme-weather'>Extreme Weather</Link></li>
-                      <li><Link to='/changes/changes-in-precipitation'>Changes in Precipitation</Link></li>
-                      <li><Link to='/changes/rising-temperatures'>Rising Temperatures</Link></li>
+                      <li><a href='/changes/sea-level-rise' onClick={(e) => window.location.href = e.target['href']}>Sea Level Rise</a></li>
+                      <li><a href='/changes/extreme-weather' onClick={(e) => window.location.href = e.target['href']}>Extreme Weather</a></li>
+                      <li><a href='/changes/changes-in-precipitation' onClick={(e) => window.location.href = e.target['href']}>Changes in Precipitation</a></li>
+                      <li><a href='/changes/rising-temperatures' onClick={(e) => window.location.href = e.target['href']}>Rising Temperatures</a></li>
                     </ul>
                   </section>
                 </div>
@@ -153,22 +152,22 @@ class MegaMenu extends Component {
                   <section className='col col-sm-4 no-pad-r'>
                     <h3>MVP Program:</h3>
                     <ul>
-                      <li><Link to='/mvp'>MVP Program Information</Link></li>
+                      <li><a href='/mvp' onClick={(e) => window.location.href = e.target['href']}>MVP Program Information</a></li>
                     </ul>
                   </section>
                   <section className='col col-sm-4 no-pad-r'>
                     <h3>State Hazard Mitigation and Climate Adaptation Plan:</h3>
                     <ul>
-                      <li><Link to='/shmcap-portal'>Our Plan </Link></li>
-                      <li><Link to='/state-action-tracker'>Massachusetts State Action Tracker </Link></li>
+                      <li><a href='/shmcap-portal' onClick={(e) => window.location.href = e.target['href']}>Our Plan </a></li>
+                      <li><a href='/state-action-tracker' onClick={(e) => window.location.href = e.target['href']}>Massachusetts State Action Tracker </a></li>
                     </ul>
                   </section>
                   <section className='col col-sm-4 no-pad-r'>
                     <h3>Additional Planning Resources:</h3>
                     <ul>
-                      <li><Link to='/actions/planning'>Plan Development</Link></li>
-                      <li><Link to='/actions/implementation'>Implementation</Link></li>
-                      <li><Link to='/actions/outreach-education'>Outreach / Education</Link></li>
+                      <li><a href='/actions/planning' onClick={(e) => window.location.href = e.target['href']}>Plan Development</a></li>
+                      <li><a href='/actions/implementation' onClick={(e) => window.location.href = e.target['href']}>Implementation</a></li>
+                      <li><a href='/actions/outreach-education' onClick={(e) => window.location.href = e.target['href']}>Outreach / Education</a></li>
                     </ul>
                   </section>
                 </div>

@@ -45,7 +45,7 @@ const Heading = () => {
                     </Link>
                     <button style={{borderRadius: "0"}} className={`${activeMenu ? "selected" : ""} btn btn-link text-white nav-item font-weight-bold py-4 text-decoration-none`} onClick={() => toggleMenu()}>
                         Plan Highlights
-                        <FontAwesomeIcon className="ml-1" icon={faAngleDown} size="md" />
+                        <FontAwesomeIcon className="ml-1" icon={faAngleDown} />
                     </button>
                 </div>
             </div>

@@ -662,7 +662,7 @@ export const highlightsPageData = {
         details: [
             {
                 title: "CAUSE",
-                description: "here are many ways to define drought; however, the root cause of most droughts is an extended period of deficient precipitation.",
+                description: "There are many ways to define drought; however, the root cause of most droughts is an extended period of deficient precipitation.",
             },
             {
                 title: "MOST AT-RISK LOCATIONS",
@@ -670,7 +670,7 @@ export const highlightsPageData = {
             },
             {
                 title: "HISTORIC FREQUENCY",
-                description: "The last emergency level drought was in the 1060s, but since then, multiple severe droughts have occurred, including two at the Warning level and four at the watch level. Although shorter in duration, the severity of the 2016 drought was equivalent to that of the 1060s. However less severe droughts precipitation data analyzes in the Drought Management Plan, there is approximately an 8% chance of a Watch level drought occurring in any given month.",
+                description: "The last emergency level drought was in the 1960s, but since then, multiple severe droughts have occurred, including two at the Warning level and four at the watch level. Although shorter in duration, the severity of the 2016 drought was equivalent to that of the 1960s. However less severe droughts precipitation data analyzes in the Drought Management Plan, there is approximately an 8% chance of a Watch level drought occurring in any given month.",
             }
         ],
         effects: {
@@ -756,7 +756,7 @@ export const highlightsPageData = {
         details: [
             {
                 title: "CAUSE",
-                description: "In Massachusetts, flooding is caused by Nor’easters, ice jams hurricanes/tropical storms, or other heavy precipitation events. Spring snowmelt, rain on snow or frozen ground, impervious surfaces, and steep slopes with minimal soil can exacerbate flooding.",
+                description: "In Massachusetts, flooding is caused by Nor’easters, ice jams, hurricanes/tropical storms, or other heavy precipitation events. Spring snowmelt, rain on snow or frozen ground, impervious surfaces, and steep slopes with minimal soil can exacerbate flooding.",
             },
             {
                 title: "MOST AT-RISK LOCATIONS",
@@ -812,7 +812,7 @@ export const highlightsPageData = {
             },
             {
                 title: "ECONOMY",
-                description: "Economic losses due to a flood include, but are not limited to damages to buildings (and their contents) and infrastructure, agricultural losses, business interruption (including loss of wages), impacts on tourism, and tax base. Using building replacement value as a proxy for economic exposure, Middlesex, Essex and Norfolk Counties are the most economically exposed to this hazard."
+                description: "Economic losses due to a flood include, but are not limited to, damages to buildings (and their contents) and infrastructure, agricultural losses, business interruption (including loss of wages), impacts on tourism, and tax base. Using building replacement value as a proxy for economic exposure, Middlesex, Essex and Norfolk Counties are the most economically exposed to this hazard."
             },
         ],
         sectorLink: "111"
@@ -913,7 +913,7 @@ export const highlightsPageData = {
     },
     coastalErosion: {
         type: "Coastal Erosion",
-        description: "Shorelines naturally change seasonally, accreting slowly during summer when sediments are deposited by relatively low-energy waves (sediment gain) and eroding dramatically during winter when sediments are moved offshore by high-energy storm waves (sediment loss).  Storms, including hurricanes and nor’easters decrease sediment supplies, and sea-level rise contributes to these coastal hazards.",
+        description: "Shorelines naturally change seasonally, accreting slowly during summer when sediments are deposited by relatively low-energy waves (sediment gain) and eroding dramatically during winter when sediments are moved offshore by high-energy storm waves (sediment loss).  Storms, including hurricanes and nor’easters, decrease sediment supplies, and sea-level rise contributes to these coastal hazards.",
         knowMoreLink: "216",
         hazardProfile: [
             {
@@ -1153,7 +1153,7 @@ export const highlightsPageData = {
             entries: [
                 {
                     title: "Higher Extreme Temperatures",
-                    description: "The average summer across the Massachusetts during the years between 1971 and 2000 included 4 days over 90°F (i.e. extreme heat days). Climate scientists project that by mid-century, the state could have a climate that resembles that of southern states today, with an additional 10-28 days over 90°F during summer. By the end of the century, extreme heat could occur between 13-56 days during summer."
+                    description: "The average summer across Massachusetts during the years between 1971 and 2000 included 4 days over 90°F (i.e. extreme heat days). Climate scientists project that by mid-century, the state could have a climate that resembles that of southern states today, with an additional 10-28 days over 90°F during summer. By the end of the century, extreme heat could occur between 13-56 days during summer."
                 },
                 {
                     title: "Higher Average Temeratures",
@@ -1404,7 +1404,7 @@ export const highlightsPageData = {
             },
             {
                 title: "HISTORIC FREQUENCY",
-                description: "Based on the frequency of past occurrences, the Commonwealth is likely to experience at least one wildfire with noteworthy damages each year",
+                description: "Based on the frequency of past occurrences, the Commonwealth is likely to experience at least one wildfire with noteworthy damages each year.",
             }
         ],
         effects: {
@@ -1631,7 +1631,7 @@ export const highlightsPageData = {
     },
     winterStorm: {
         type: "Severe Winter Storm / Nor'easter",
-        description: "Severe winter storms include ice storms, nor’easters, heavy snow, blowing snow, and other extreme forms of winter precipitation. A blizzard is a winter snowstorm with sustained or frequent wind gusts to 35 mph or more, accompanied by falling or blowing snow that reduces visibility to or below a quarter of a mile. These conditions must be the predominant condition over a 3-hour period. Extremely cold temperatures are often associated with blizzard conditions, but are not a formal part of the definition. A nor’easter is a storm that gets its name from its continuously strong northeasterly winds blowing in from the ocean ahead of the storm and over the coastal areas. A nor’easter is characterized by a large counter-clockwise wind circulation around a low-pressure center that often results in heavy snow, high winds, and rain.",
+        description: "Severe winter storms include ice storms, nor’easters, heavy snow, blowing snow, and other extreme forms of winter precipitation. A blizzard is a winter snowstorm with sustained or frequent wind gusts of 35 mph or more, accompanied by falling or blowing snow that reduces visibility to or below a quarter of a mile. These conditions must be the predominant condition over a 3-hour period. Extremely cold temperatures are often associated with blizzard conditions, but are not a formal part of the definition. A nor’easter is a storm that gets its name from its continuously strong northeasterly winds blowing in from the ocean ahead of the storm and over the coastal areas. A nor’easter is characterized by a large counter-clockwise wind circulation around a low-pressure center that often results in heavy snow, high winds, and rain.",
         knowMoreLink: "321",
         hazardProfile: [
             {
@@ -1710,11 +1710,11 @@ export const highlightsPageData = {
             },
             {
                 title: "GOVERNMENT",
-                description: "Using data from the Northeast States Emergency Consortium, 710 state- owned facilities are located in areas that typically experience more than 2.5 days with 5 or more inches of snow per year. Nearly half of these facilities are located in Worcester County. SLOSH Zones show that Suffolk, Bristol, and Essex Counties have highest number of government facilities exposed to nor’easters."
+                description: "Using data from the Northeast States Emergency Consortium, 710 state- owned facilities are located in areas that typically experience more than 2.5 days with 5 or more inches of snow per year. Nearly half of these facilities are located in Worcester County. SLOSH Zones show that Suffolk, Bristol, and Essex Counties have the highest number of government facilities exposed to nor’easters."
             },
             {
                 title: "BUILT ENVIRONMENT",
-                description: "All elements of the built environment in the Commonwealth are exposed to severe winter weather. According to the DCAMM facility inventory, 19 critical facilities are located in areas that typically experience more than 2.5 days with 5 or more inches of snow per year. SLOSH Zones show that Suffolk and Essex Counties have highest number of critical facilities exposed to nor’easters. Severe winter can result in downed power lines, extended power failures, and road blockages. It can also overwhelm the capacity of public safety providers."
+                description: "All elements of the built environment in the Commonwealth are exposed to severe winter weather. According to the DCAMM facility inventory, 19 critical facilities are located in areas that typically experience more than 2.5 days with 5 or more inches of snow per year. SLOSH Zones show that Suffolk and Essex Counties have the highest number of critical facilities exposed to nor’easters. Severe winter can result in downed power lines, extended power failures, and road blockages. It can also overwhelm the capacity of public safety providers."
             },
             {
                 title: "NATURAL RESOURCES & ENVIRONMENT",
@@ -1768,7 +1768,7 @@ export const highlightsPageData = {
             },
             {
                 title: "MOST AT-RISK LOCATIONS",
-                description: "The entire Commonwealth experiences thunderstorms. While the entire Commonwealth is also at risk to strong winds, the coastal zone is most frequently impacted by high-wind events",
+                description: "The entire Commonwealth experiences thunderstorms. While the entire Commonwealth is also at risk to strong winds, the coastal zone is most frequently impacted by high-wind events.",
             },
             {
                 title: "HISTORIC FREQUENCY",

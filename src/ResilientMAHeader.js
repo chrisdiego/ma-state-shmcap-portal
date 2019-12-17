@@ -203,7 +203,7 @@ class Header extends Component {
 
   render() {
     return <div className='header-wrap'>
-      <div className='container header'>
+      <div className='px-5 header'>
         <Logo />
         <div className='controls'>
           <SearchBar className='' size='sm'/>

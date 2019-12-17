@@ -4,8 +4,8 @@ import PDFLink from '../utils/PDFLink';
 import cover from '../assets/shmcap-cover.jpg';
 import graph from '../assets/index-graph.png';
 import EOPSSlogo from '../assets/EOPSSlogo.png';
-import massdotlogo from '../assets/massdotlogo.jpg';
-import laborlogo from '../assets/laborlogo.png';
+import memalogo from '../assets/mema_logo.jpg';
+import eealogo from '../assets/eea-sm.jpg';
 
 const IndexPage = () => {
     return (
@@ -36,14 +36,14 @@ const IndexPage = () => {
                         <li><p>Establishes a strategy for implementation and continued evolution of the plan to incorporate new information and data as they become available as well as engage relevant stakeholders.</p></li>
                     </ul>
                     <Row className="align-items-center">
-                        <Col sm={3} className="mr-4">
-                            <img className="mw-100 mr-3 ml-4" src={EOPSSlogo} alt="EOPSS logo"/>
+                        <Col sm={3}>
+                            <img className="mw-100" src={EOPSSlogo} alt="EOPSS logo"/>
                         </Col>
                         <Col sm={3}>
-                            <img className="mw-100 mr-3" src={laborlogo} alt="Mass DOT logo"/>
+                            <img className="mw-100 m-auto d-block" src={eealogo} alt="Mass DOT logo"/>
                         </Col>
-                        <Col sm={4}>
-                            <img className="mw-100" src={massdotlogo} alt="Labor logo"/>
+                        <Col sm={3}>
+                            <img className="mw-100" src={memalogo} alt="Labor logo"/>
                         </Col>
                     </Row>
                     <PDFLink page="" pdf="summary" className="btn btn-primary ml-4 mt-4">Learn More</PDFLink>

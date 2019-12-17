@@ -91,15 +91,15 @@ const menuContent = (menu, setActiveMenu) => {
                             <a className="text-secondary" href="http://ma-state-action-tracker.s3-website-us-east-1.amazonaws.com/#/" target="_blank">SHMCAP Action Tracker</a>
                             </li>
                         <li>
-                            <Link to="/acronyms" className="text-secondary" onClick={() => setActiveMenu(false)}>Acronyms</Link>
-                            </li>
+                            <Link to="/acronyms" className="text-secondary" target="" onClick={() => setActiveMenu(false)}>Acronyms</Link>
+                        </li>
                     </ul>
                     <a href={plan} download className="text-uppercase border-top border-primary d-block text-center">Download Full Plan</a>
                     <a href={summary} download className="text-uppercase border-top border-bottom border-primary d-block text-center">Download Executive Summary</a>
                 </Col>
             </>
         );
-    else 
+    else
         return null
 }
 
@@ -108,7 +108,7 @@ const Menu = ({activeMenu, setActiveMenu}) => {
         transition: "opacity 200ms ease-in-out",
         opacity: 0,
       }
-      
+
     const transitionStyles = {
         entering: { opacity: 1 },
         entered:  { opacity: 1 },

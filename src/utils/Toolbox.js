@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Toolbox = ({ glossary }) => {
     return (
         <div className="toolbox px-5 py-3 position-fixed" style={{borderWidth: "thick", border: "3px solid #2B1E76"}}>
-            {glossary ? 
+            {glossary ?
                 <>
                     <h5 className="text-secondary font-weight-bold">WHAT'S IN THIS SECTION:</h5>
                     <ul className="px-3">
@@ -15,7 +15,7 @@ const Toolbox = ({ glossary }) => {
             }
             <h5 className="text-secondary font-weight-bold">TOOLS:</h5>
             <ul className="px-3">
-                <li><a href="http://ma-state-action-tracker.s3-website-us-east-1.amazonaws.com/#/" className="text-secondary" target="_blank">SHMCAP Action Tracker</a></li>
+                <li><Link to="/action-tracker" className="text-secondary" >SHMCAP Action Tracker</Link></li>
                 <li><a href="https://www.resilientma.org/data/maps" className="text-secondary" target="_blank">Mapping Tools</a></li>
                 <li><Link to="/acronyms" className="text-secondary" target="_blank">Acronyms</Link></li>
             </ul>

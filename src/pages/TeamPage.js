@@ -5,6 +5,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import PageLayout from './PageLayout';
 import PDFLink from '../utils/PDFLink';
+import ClearinghouseCollection from './ClearinghouseCollection';
 
 const TeamPage = () => {
 	const toolboxData = [
@@ -30,22 +31,9 @@ const TeamPage = () => {
 			<h5 id="responsibilities" className="text-secondary font-weight-bold my-4">RMAT Responsibilities</h5>
 			<p>Under the direction of the primary state agencies, the Massachusetts Emergency Management Agency (MEMA) and the Executive Office of Energy and Environmental Affairs (EEOEEA), the RMAT will be tasked with monitoring and tracking the implementation process, making recommendations to and supporting the primary state agencies on plan updates.  The RMAT will also facilitate coordination across State government and with stakeholders, including businesses, cities, and towns.</p>
 			<hr style={{borderWidth: "thick", opacity: "0.6"}} className="my-5" />
-			<h5 id="highlights" className="text-secondary font-weight-bold my-5">RMAT and Agency Highlights</h5>
-			<Row className="mx-0 mb-4">
-				<Col sm={3} style={{marginLeft: "-15px"}}>
-					<img className="mw-100" src="https://via.placeholder.com/200x250" alt="placeholder image" />
-				</Col>
-				<Col sm={3}>
-					<img className="mw-100" src="https://via.placeholder.com/200x250" alt="placeholder image" />
-				</Col>
-				<Col sm={3}>
-					<img className="mw-100" src="https://via.placeholder.com/200x250" alt="placeholder image" />
-				</Col>
-				<Col sm={3}>
-					<img className="mw-100" src="https://via.placeholder.com/200x250" alt="placeholder image" />
-				</Col>
-			</Row>
-			<PDFLink page="506" pdf="plan" className="btn btn-primary my-4">Want to know more?</PDFLink>
+      <ClearinghouseCollection title='RMAT and Agency Highlights' collection_name="MA/RMAT-highlights">
+			  <PDFLink page="506" pdf="plan" className="btn btn-primary my-4">Want to know more?</PDFLink>
+      </ClearinghouseCollection>
 			<hr style={{borderWidth: "thick", opacity: "0.6"}} className="my-5" />
 			<h5 id="implementation" className="text-secondary font-weight-bold mt-5">Plan Implementation</h5>
 			<Row className="mx-0 align-items-center">

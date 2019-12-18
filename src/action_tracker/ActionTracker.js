@@ -213,7 +213,7 @@ const ActionTracker = ({}) => {
     <>
         <Heading title="SHMCAP Action Tracker"
           page={page} />
-        <Row className="my-4">
+        <Row className="my-4 m-0">
             <Utilities
               currentQuery={currentQuery}
               setSelectedQuery={setSelectedQuery}
@@ -222,7 +222,7 @@ const ActionTracker = ({}) => {
               applyFilters={applyFilters}
             />
         </Row>
-        <Row>
+        <Row className="m-0">
             <Col xs={12} sm={3} className="border-right border-dark">
               <ActionFilters
                 selectedFilters={selectedFilters}

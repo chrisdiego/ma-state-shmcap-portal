@@ -138,7 +138,7 @@ const ActionDetail = ({}) => {
                         <h4 className="mb-0"><b>{item.title}:</b></h4>
                         {item.data.map((values, i, array) => {
                             return (
-                                <span key={JSON.stringify(values)} >{values.status || values.name || values.action || values.type || values.note}{i + 1 !== array.length ? ',' : null} </span>
+                                <span key={JSON.stringify(values)} >{values.status || values.name || values.action || values.type || values.timeframe || values.note}{i + 1 !== array.length ? ',' : null} </span>
                             );
                         })}
                     </li>

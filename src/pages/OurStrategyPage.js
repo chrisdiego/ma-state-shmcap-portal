@@ -31,12 +31,14 @@ const OurStrategyPage = () => {
 		<PageLayout title="Our Strategy" toolboxData={toolboxData}>
 			<h3 id="shmcapGoals" className="text-secondary mb-5">SHMCAP Goals</h3>
             <Row>
-			   <Col sm={6}>
+			  <Col sm={6}>
 				<img className="mw-100" style={{maxHeight: "900px"}} src={strategyImage1} alt="SHMCAP Goals" />
-			   </Col>
-			   <Col sm={6} className="pt-sm-4">
-				<p>The SHMCAP's strategy to address risks and vulnerabilities from natural hazards and climate change impacts, is guided by a mission statement and five goals, and includes a series of specific hazard mitigation and climate adaptation actions.  The process to develop these actions included extensive stakeholder engagement, reference to strategies and actions identified in local hazard mitigation plans, and development of initial actions by the Commonwealth's state agencies and Climate Change Coordinators across all Secretariats.</p>
-				<PDFLink page="431" pdf="plan" className="btn btn-primary my-4">Want to know more?</PDFLink>
+			  </Col>
+			  <Col sm={6}  className="pt-sm-4">
+          <div className='p-3' style={{backgroundColor: "whitesmoke"}}>
+            <p>The SHMCAP's strategy to address risks and vulnerabilities from natural hazards and climate change impacts, is guided by a mission statement and five goals, and includes a series of specific hazard mitigation and climate adaptation actions.  The process to develop these actions included extensive stakeholder engagement, reference to strategies and actions identified in local hazard mitigation plans, and development of initial actions by the Commonwealth's state agencies and Climate Change Coordinators across all Secretariats.</p>
+            <PDFLink page="431" pdf="plan" className="btn btn-primary my-4">Want to know more?</PDFLink>
+          </div>
 			   </Col>
 		   </Row>
            <hr style={{borderWidth: "thick", opacity: "0.6"}} className="mt-5" />
@@ -56,10 +58,7 @@ const OurStrategyPage = () => {
 				<li><p>NBS offer numerous co-benefits, including minimizing costs, improving water quality, and enhancing quality of life.</p></li>
 				<li><p>NBS should be considered at an ecosystem scale to prioritize the most effective solutions and locations.</p></li>
 			</ul>
-
-
-
-           <PDFLink page="433" pdf="plan" className="btn btn-primary my-4">Want to know more?</PDFLink>
+      <PDFLink page="433" pdf="plan" className="btn btn-primary my-4">Want to know more?</PDFLink>
 		</PageLayout>
 	);
 }

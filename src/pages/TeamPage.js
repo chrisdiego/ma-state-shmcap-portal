@@ -29,10 +29,12 @@ const TeamPage = () => {
 	return (
 		<PageLayout title="Resilient MA Action Team" toolboxData={toolboxData}>
 			<h5 id="responsibilities" className="text-secondary font-weight-bold my-4">RMAT Responsibilities</h5>
-			<p>Under the direction of the primary state agencies, the Massachusetts Emergency Management Agency (MEMA) and the Executive Office of Energy and Environmental Affairs (EEOEEA), the RMAT will be tasked with monitoring and tracking the implementation process, making recommendations to and supporting the primary state agencies on plan updates.  The RMAT will also facilitate coordination across State government and with stakeholders, including businesses, cities, and towns.</p>
+			<p>
+        Under the direction of the primary state agencies, the Massachusetts Emergency Management Agency (MEMA) and the Executive Office of Energy and Environmental Affairs (EEOEEA), the RMAT will be tasked with monitoring and tracking the implementation process, making recommendations to and supporting the primary state agencies on plan updates.  The RMAT will also facilitate coordination across State government and with stakeholders, including businesses, cities, and towns.
+      </p>
+      <PDFLink page="506" pdf="plan" className="btn btn-primary my-4">Want to know more?</PDFLink>
 			<hr style={{borderWidth: "thick", opacity: "0.6"}} className="my-5" />
       <ClearinghouseCollection title='RMAT and Agency Highlights' collection_name="MA/RMAT-highlights">
-			  <PDFLink page="506" pdf="plan" className="btn btn-primary my-4">Want to know more?</PDFLink>
       </ClearinghouseCollection>
 			<hr style={{borderWidth: "thick", opacity: "0.6"}} className="my-5" />
 			<h5 id="implementation" className="text-secondary font-weight-bold mt-5">Plan Implementation</h5>

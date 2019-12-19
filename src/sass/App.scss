@@ -20,8 +20,8 @@ body {
 }
 
 .logos-row img {
-  max-height: 150px;
-
+  width: 100%;
+  max-width: 150px;
 }
 
 @import '~bootstrap/scss/bootstrap.scss';

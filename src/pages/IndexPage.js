@@ -36,13 +36,13 @@ const IndexPage = () => {
                         <li><p>Establishes a strategy for implementation and continued evolution of the plan to incorporate new information and data as they become available as well as engage relevant stakeholders.</p></li>
                     </ul>
                     <Row className="align-items-center logos-row">
-                        <Col sm={2}>
+                        <Col sm={4}>
                             <img className="" src={ma_state_seal} alt="MA State Seal"/>
                         </Col>
-                        <Col sm={2}>
+                        <Col sm={4}>
                             <img className="" src={memalogo} alt="Labor logo"/>
                         </Col>
-                        <Col sm={2}>
+                        <Col sm={4}>
                             <img className="m-auto d-block" src={eealogo} alt="Mass DOT logo"/>
                         </Col>
                     </Row>

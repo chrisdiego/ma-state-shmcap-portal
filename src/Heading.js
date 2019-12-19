@@ -10,9 +10,6 @@ import './action_tracker/sass/Heading.scss';
 
 const Heading = () => {
     const [activeMenu, setActiveMenu] = useState(false);
-    const isFramed = () => {
-      return true; //(window.location !== window.parent.location);
-    }
     const toggleMenu = () => {
         setActiveMenu(!activeMenu)
     }

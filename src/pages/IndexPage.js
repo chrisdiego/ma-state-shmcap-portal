@@ -3,7 +3,7 @@ import { Row, Col } from 'react-bootstrap';
 import PDFLink from '../utils/PDFLink';
 import cover from '../assets/shmcap-cover.jpg';
 import graph from '../assets/index-graph.png';
-import EOPSSlogo from '../assets/EOPSSlogo.png';
+import ma_state_seal from '../assets/ma_state_seal.png';
 import memalogo from '../assets/mema_logo.jpg';
 import eealogo from '../assets/eea-sm.jpg';
 
@@ -35,15 +35,15 @@ const IndexPage = () => {
                         <li><p>Evaluates the Commonwealth's existing capabilities to implement agency-specific and statewide hazard mitigation and climate adaptation activities to reduce risk and increase resilience.</p></li>
                         <li><p>Establishes a strategy for implementation and continued evolution of the plan to incorporate new information and data as they become available as well as engage relevant stakeholders.</p></li>
                     </ul>
-                    <Row className="align-items-center">
-                        <Col sm={3}>
-                            <img className="mw-100" src={EOPSSlogo} alt="EOPSS logo"/>
+                    <Row className="align-items-center logos-row">
+                        <Col sm={2}>
+                            <img className="" src={ma_state_seal} alt="MA State Seal"/>
                         </Col>
-                        <Col sm={3}>
-                            <img className="mw-100 m-auto d-block" src={eealogo} alt="Mass DOT logo"/>
+                        <Col sm={2}>
+                            <img className="" src={memalogo} alt="Labor logo"/>
                         </Col>
-                        <Col sm={3}>
-                            <img className="mw-100" src={memalogo} alt="Labor logo"/>
+                        <Col sm={2}>
+                            <img className="m-auto d-block" src={eealogo} alt="Mass DOT logo"/>
                         </Col>
                     </Row>
                     <PDFLink page="" pdf="summary" className="btn btn-primary ml-4 mt-4">Learn More</PDFLink>

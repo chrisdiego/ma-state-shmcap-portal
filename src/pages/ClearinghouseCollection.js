@@ -32,7 +32,6 @@ class ClearinghouseCollection extends Component {
 
   render() {
     let resources = this.props.resources || this.state.collection_result.resources || [{}, {},{}];
-
     return (
       <div className='clearinghouse-collection'>
       {this.props.title ? <h5 className='text-secondary font-weight-bold my-4'>
@@ -47,13 +46,8 @@ class ClearinghouseCollection extends Component {
             let label = <label>{res.title}</label>;
 
             return <li className='resource' key={i}>
-                {res.href ?
-                    <a className='img-link'href={res.href}> {img}</a> :
-                    <Link className='img-link'to={href}> {img} </Link>}
-
-                {res.href ?
-                    <a className='label-link'href={res.href}> {label}</a> :
-                    <Link className='label-link'to={href}> {label} </Link>}
+                <a className='img-link'href={href} target="_blank"> {img}</a>
+                <a className='label-link'href={href} target="_blank"> {label}</a>
 
             </li>
           })}

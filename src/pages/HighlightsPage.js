@@ -47,7 +47,7 @@ const HighlightsPage = ({ match }) => {
     } = highlightsPageData[match.params.hazard];
 
     return (
-        <PageLayout title={type} toolboxData={toolboxData}>   
+        <PageLayout title={type} toolboxData={toolboxData}>
             <p>{description}</p>
             <PDFLink pdf="plan" page={knowMoreLink} className="btn btn-primary mt-3">Full Hazard Profile</PDFLink>
             <hr style={{borderWidth: "thick", opacity: "0.6"}} className="my-5" />
@@ -57,7 +57,7 @@ const HighlightsPage = ({ match }) => {
                         <Col sm={4} className="px-1 d-flex flex-column align-items-stretch">
                             <h5 className="bg-secondary text-white font-weight-bold py-3 px-2 mb-0">{detail.title}</h5>
                             <p style={{background: "whitesmoke"}} className="p-3 h-100">{detail.description}</p>
-                        </Col>    
+                        </Col>
                     )
                 }
             </Row>
@@ -66,16 +66,16 @@ const HighlightsPage = ({ match }) => {
                     <h5 className="bg-secondary text-white font-weight-bold py-3 px-2 mb-0" id="effects">POTENTIAL EFFECTS OF CLIMATE CHANGE</h5>
                     <Row>
                         {
-                            effects.images.map(image => 
+                            effects.images.map(image =>
                                 <Col xs={4}>
                                     <img className="p-4 mw-100" style={{maxWidth: "160px"}}src={image.src} alt={image.label} />
-                                    <p className="px-4">{image.label}</p>    
+                                    <p className="px-4">{image.label}</p>
                                 </Col>
                             )
                         }
                     </Row>
                         {
-                            effects.entries.length ? effects.entries.map(entry => 
+                            effects.entries.length ? effects.entries.map(entry =>
                                 <>
                                     <h5 className="text-secondary font-weight-bold my-4">{entry.title}</h5>
                                     <p>{entry.description}</p>
@@ -88,7 +88,7 @@ const HighlightsPage = ({ match }) => {
                     <div className="p-3">
                         {sectors.map(sector => <Sector title={sector.title} description={sector.description} />)}
                     </div>
-                    <PDFLink pdf="plan" page={sectorLink} className="btn btn-primary mx-3 my-4">Full Hazard Profile</PDFLink>
+                    <PDFLink pdf="plan" page={sectorLink} className="btn btn-primary mx-3 my-4">Want to know more?</PDFLink>
                 </Col>
             </Row>
         </PageLayout>

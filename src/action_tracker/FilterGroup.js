@@ -24,11 +24,11 @@ const FilterGroup = ({ items, title, filter_key, selectedFilters, setFilters }) 
 
   return (
     <>
-      <div>
-        <Chevron className={setRotate} width={10} fill={"#2B1E76"} onClick={toggleCollapse} />
-        <button className="text-secondary font-weight-bold btn btn-link p-0 ml-1 mr-2" onClick={toggleCollapse}>
-          <h5 className="font-weight-bold m-0">{title}</h5>
-        </button>
+      <div style={{position: "relative"}}>
+        <h5 onClick={toggleCollapse} style={{lineHeight: "20px", textAlign: "left", paddingLeft: "10px", textIndent: "-10px"}} className="text-secondary btn btn-link font-weight-bold m-0">
+          <Chevron className={setRotate}  width={10} fill={"#2B1E76"} onClick={toggleCollapse} />
+          {title}
+        </h5>
       </div>
       {/* map out all filter options for the current category */}
       <ul className={`${setActive} filterGroupList list-unstyled pl-3`} ref={filterGroupContent} style={{ maxHeight: `${setHeight}` }}>

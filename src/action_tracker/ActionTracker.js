@@ -84,7 +84,6 @@ const ActionTracker = ({}) => {
           filterGroupDetails[route],
           {
             data: filters.data.map((d) => {
-              console.log(d)
               d.computed_name = (d.type || d.status || d.name || d.action || d.timeframe);
               d.display_name = d.computed_name.trim();
               return d;
@@ -92,7 +91,6 @@ const ActionTracker = ({}) => {
           });
         });
       })).then(data => {
-        console.log(data)
         setFilterCategories(data)
       })
   };
@@ -107,10 +105,14 @@ const ActionTracker = ({}) => {
     let urlFilters = undefined;
     if (getUrlParameter('currentFilters')) {
         urlFilters = JSON.parse(getUrlParameter('currentFilters'));
+        setCurrentFilters(urlFilters);
+        setSelectedFilters(urlFilters);
     }
     let urlQuery = undefined;
     if (getUrlParameter('currentQuery')) {
         urlQuery = getUrlParameter('currentQuery');
+        setCurrentQuery(urlQuery);
+        setSelectedQuery(urlQuery);
     }
 
     getRecords(urlFilters, urlQuery, 1);

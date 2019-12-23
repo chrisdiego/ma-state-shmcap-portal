@@ -37,7 +37,7 @@ const FacetGroup = ({group, setActiveMenu}) => {
                 </div>
                 <div className={`${setActive} facetGroupList`} ref={facetGroupContent} style={{ maxHeight: `${setHeight}` }}>
                     {group.facets.map(facet => (
-                        <Link className="d-block text-secondary" to={facet.link} onClick={() => setActiveMenu(false)}>{facet.title}</Link>
+                        <Link key={facet.title} className="d-block text-secondary" to={facet.link} onClick={() => setActiveMenu(false)}>{facet.title}</Link>
                     ))}
                 </div>
             </li>

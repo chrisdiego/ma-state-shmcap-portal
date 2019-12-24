@@ -114,7 +114,7 @@ class MegaMenu extends Component {
                 <div className='row'>
                   <section className='col col-sm-4 no-pad-r'>
                     <h3>Explore Sectors:</h3>
-                    <ul>
+                    <ul style={{paddingLeft: "8px"}}>
                       <li><a href='/sectors/agriculture' onClick={(e) => window.location.href = e.target['href']}>Agriculture</a></li>
                       <li><a href='/sectors/coastal-zones' onClick={(e) => window.location.href = e.target['href']}>Coastal Zones</a></li>
                       <li><a href='/sectors/economy' onClick={(e) => window.location.href = e.target['href']}>Economy</a></li>
@@ -126,7 +126,7 @@ class MegaMenu extends Component {
                   </section>
                   <section className='col col-sm-4 no-pad-r'>
                     <h3>&nbsp;</h3>
-                    <ul>
+                    <ul style={{paddingLeft: "8px"}}>
                       <li><a href='/sectors/natural-resources-habitats' onClick={(e) => window.location.href = e.target['href']}>Natural Resources / Habitats</a></li>
                       <li><a href='/sectors/public-health' onClick={(e) => window.location.href = e.target['href']}>Public Health</a></li>
                       <li><a href='/sectors/public-safety-emergency-response' onClick={(e) => window.location.href = e.target['href']}>Public Safety / Emergency Response</a></li>
@@ -137,7 +137,7 @@ class MegaMenu extends Component {
                   </section>
                   <section className='col col-sm-4 no-pad-r'>
                     <h3>Identify Changes:</h3>
-                    <ul>
+                    <ul style={{paddingLeft: "8px"}}>
                       <li><a href='/changes/sea-level-rise' onClick={(e) => window.location.href = e.target['href']}>Sea Level Rise</a></li>
                       <li><a href='/changes/extreme-weather' onClick={(e) => window.location.href = e.target['href']}>Extreme Weather</a></li>
                       <li><a href='/changes/changes-in-precipitation' onClick={(e) => window.location.href = e.target['href']}>Changes in Precipitation</a></li>
@@ -152,20 +152,20 @@ class MegaMenu extends Component {
                 <div className='row'>
                   <section className='col col-sm-4 no-pad-r'>
                     <h3>MVP Program:</h3>
-                    <ul>
+                    <ul style={{paddingLeft: "8px"}}>
                       <li><a href='/mvp' onClick={(e) => window.location.href = e.target['href']}>MVP Program Information</a></li>
                     </ul>
                   </section>
                   <section className='col col-sm-4 no-pad-r'>
                     <h3>State Hazard Mitigation and Climate Adaptation Plan:</h3>
-                    <ul>
+                    <ul style={{paddingLeft: "8px"}}>
                       <li><Link to='/'>Our Plan </Link></li>
                       <li><Link to='/action-tracker'>Massachusetts State Action Tracker </Link></li>
                     </ul>
                   </section>
                   <section className='col col-sm-4 no-pad-r'>
                     <h3>Additional Planning Resources:</h3>
-                    <ul>
+                    <ul style={{paddingLeft: "8px"}}>
                       <li><a href='/actions/planning' onClick={(e) => window.location.href = e.target['href']}>Plan Development</a></li>
                       <li><a href='/actions/implementation' onClick={(e) => window.location.href = e.target['href']}>Implementation</a></li>
                       <li><a href='/actions/outreach-education' onClick={(e) => window.location.href = e.target['href']}>Outreach / Education</a></li>

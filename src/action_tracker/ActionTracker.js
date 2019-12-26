@@ -47,10 +47,12 @@ const ActionTracker = ({}) => {
       title: "Agency Priority Score",
       filter_key: "agency_priority_id",
     },
+    /*
     "/shmcap-goals": {
       title: "SHMCAP Goal",
       filter_key: "shmcap_goal_ids"
     },
+    */
     "/primary-climate-interactions": {
       title: "Primary Climate Interaction",
       filter_key: "primary_climate_interaction_ids",

@@ -58,7 +58,7 @@ export const highlightFacets = [
                 link: "/highlight/winterStorm"
             },
             {
-                title: "Hurricanes",
+                title: "Hurricanes / Tropical Storms",
                 link: "/highlight/hurricane"
             },
             {
@@ -547,7 +547,7 @@ export const glossaryData2 = [
     definition: "Wetlands Protection Act"
     }
 ];
-     
+
 export const fullPlanData = [
     {
         title: "Full Plan",

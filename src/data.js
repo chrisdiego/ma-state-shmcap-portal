@@ -908,7 +908,7 @@ export const highlightsPageData = {
                 description: "A tsunami’s negative impact on the economy is difficult to quantify. Losses would likely include general building stock damage, business interruption/closures, port closures, utility and transportation damage, and impacts on tourism and tax base to the Commonwealth."
             },
         ],
-        sectorLink: "236"
+        sectorLink: "235"
     },
     coastalErosion: {
         type: "Coastal Erosion",
@@ -998,7 +998,7 @@ export const highlightsPageData = {
                 description: "The beaches, parks, and natural resources along the Massachusetts coast contribute greatly to the local economy, especially during the summer season where the population in coastal areas can more than double. Beach loss, if not mitigated, will likely result in significant economic impacts to these communities."
             },
         ],
-        sectorLink: "225"
+        sectorLink: "224"
     },
     landslide: {
         type: "Landslide",
@@ -1908,6 +1908,6 @@ export const highlightsPageData = {
                 description: "Invasive species are widely considered to be one of the most costly natural hazards in the United States, as invasive control efforts can be quite extensive and these species can damage crops, recreational amenities, and public goods such as water quality."
             },
         ],
-        sectorLink: "299"
+        sectorLink: "298"
     }
 };

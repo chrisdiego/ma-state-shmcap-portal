@@ -181,7 +181,7 @@ export const hazardSections = [
         alt: "Rising temperatures",
         hazards: [
             {
-                label: "Average global/Extreme Temperatures",
+                label: "Average / Extreme Temperatures",
                 link: "avgExtTemp"
             },
             {

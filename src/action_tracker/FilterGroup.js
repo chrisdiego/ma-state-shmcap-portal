@@ -26,7 +26,7 @@ const FilterGroup = ({ items, title, filter_key, selectedFilters, setFilters }) 
     <>
       <div style={{position: "relative"}}>
         <h5 onClick={toggleCollapse} style={{lineHeight: "20px", textAlign: "left", paddingLeft: "10px", textIndent: "-10px"}} className="text-secondary btn btn-link font-weight-bold m-0">
-          <Chevron className={setRotate}  width={10} fill={"#2B1E76"} onClick={toggleCollapse} />
+          <Chevron className={setRotate} height={10} width={10} fill={"#2B1E76"} onClick={toggleCollapse} />
           {title}
         </h5>
       </div>

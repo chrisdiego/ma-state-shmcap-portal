@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import Menu from './Menu';
-import Search from './utils/Search';
 import ResilientMAHeader from './ResilientMAHeader';
-import logo from './assets/logo.png';
 import './action_tracker/sass/Heading.scss';
 
 const Heading = () => {
@@ -18,7 +16,7 @@ const Heading = () => {
         <div className="heading">
             <ResilientMAHeader />
             <div className="heading-secondary bg-primary text-white pl-sm-5 pt-3 pt-sm-0 text-center text-sm-left d-flex align-items-center justify-content-between flex-column flex-sm-row">
-                <Link to="/" className="text-white">
+                <Link to="/" className="text-white text-decoration-none">
                     <h1 className="title m-0">Massachusetts <b>State Hazard Mitigation & Climate Adaptation Plan</b></h1>
                 </Link>
                 <div className="pr-1 d-flex position-relative flex-column flex-sm-row">

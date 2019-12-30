@@ -33,7 +33,7 @@ const FacetGroup = ({group, setActiveMenu}) => {
             <li className="mb-3">
                 <div className="border-bottom border-primary facetGroupTitle d-flex mb-1" style={{minHeight: "35px"}} onClick={toggleCollapse}>
                     <h6 className="m-0 text-left text-secondary font-weight-bold">{ReactHtmlParser(group.facetGroupTitle)}</h6>
-                    <Chevron className={setRotate} width={15} fill={"#2B1E76"} />
+                    <Chevron className={setRotate} width={15} height={15} fill={"#2B1E76"} />
                 </div>
                 <div className={`${setActive} facetGroupList`} ref={facetGroupContent} style={{ maxHeight: `${setHeight}` }}>
                     {group.facets.map(facet => (

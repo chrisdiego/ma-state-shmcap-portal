@@ -85,7 +85,7 @@ const Logo = (props) =>
         <span className='slate-text'>resilient</span>
         <strong className='orange-text'> MA </strong>
       </h1>
-      <small className='tagline slate-text'>
+      <small className='tagline slate-text text-nowrap'>
         Climate Change Clearinghouse for the Commonwealth
       </small>
     </div>

@@ -138,10 +138,12 @@ const ActionTracker = ({}) => {
     setCurrentQuery(queryParam);
 
     setCurrentFilters(Object.assign({}, filterParams));
-    const paginationParams = `&page=${nextPage}&per_page=${PER_PAGE}`
+    let q_pagination = `page=${encodeURIComponent(nextPage)}&per_page=${PER_PAGE}`;
+    let q_query = `query=${encodeURIComponent(queryParam)}`;
+    let q_filter_params = `filter=${encodeURIComponent(JSON.stringify(filterParams))}`;
 
     new Promise((ok, err) => {
-      fetch(`${config.api_host}/action-tracks/?filter=${JSON.stringify(filterParams)}${paginationParams}&query=${queryParam}&sort_by_field=title&sort_by_order=ASC`)
+      fetch(`${config.api_host}/action-tracks/?${q_filter_params}&${q_pagination}&${q_query}&sort_by_field=title&sort_by_order=ASC`)
       .then(res => res.json())
       .then(res => setActions(res))
       .then((res) => setLoadingStatus(false))

@@ -4,9 +4,7 @@ import Loading from './utils/Loading';
 import config from "./Config.js";
 import './sass/ActionFilters.scss';
 
-const ActionFilters = ({ selectedFilters, setFilters, clearFilters,applyFilters, loadingStatus, filterCategories}) => {
-
-  const [nextFilters, setNextFilters] = useState(selectedFilters);
+const ActionFilters = ({ selectedFilters, setFilters, clearFilters, applyFilters, loadingStatus, filterCategories }) => {
 
   return (
     <>

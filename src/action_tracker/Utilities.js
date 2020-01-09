@@ -1,17 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { CSVLink } from "react-csv";
 import config from "./Config.js";
 import './sass/Utilities.scss';
 
-const Utilities = ({ applyFilters, data, currentFilters, currentQuery, setSelectedQuery, selectedQuery}) => {
+const Utilities = ({ selectedFilters, getRecords, applyFilters, currentFilters, currentQuery, setSelectedQuery, selectedQuery, setCurrentQuery}) => {
   const handleChange = (event) => {
     setSelectedQuery(event.target.value);
   }
 
   const handleSubmit = (event) => {
-    setSelectedQuery(event.target.value);
+    setSelectedQuery(event.target.value || selectedQuery);
     applyFilters(selectedQuery);
     event.preventDefault();
   }
@@ -20,7 +19,7 @@ const Utilities = ({ applyFilters, data, currentFilters, currentQuery, setSelect
   }
   return (
    <Col className="utilities">
-        <a href={downloadLink()} target="_black"
+        <a href={downloadLink()} target="_blank"
            rel="noopener noreferrer"
         className="utility btn btn-primary mr-3">Download CSV</a>
         <input className="utility"
@@ -36,8 +35,9 @@ const Utilities = ({ applyFilters, data, currentFilters, currentQuery, setSelect
         <button className="btn btn-primary py-1 ml-1" type="submit" onClick={(event) => handleSubmit(event)}>Search</button>
         <button className="btn py-1 ml-1 border"
             disabled={!(selectedQuery).length} onClick={() => {
-            applyFilters()
+            getRecords(selectedFilters, "")
             setSelectedQuery("")
+            setCurrentQuery("")
           }
         }>
           Clear

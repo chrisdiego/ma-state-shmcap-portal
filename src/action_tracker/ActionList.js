@@ -46,12 +46,27 @@ const CurrentFilterList = ({setFilters, currentFilters, filterCategories}) => {
   }
 };
 
-const ActionList = ({ totalPages, setFilters, data, setSelectedAction, page, navigatePages, totalRecords, loadingStatus, currentFilters, currentQuery, selectedFilters, filterCategories}) => {
+const ActionList = ({ selectedFilters, getRecords, setSelectedQuery, totalPages, setFilters, data, setSelectedAction, page, navigatePages, totalRecords, loadingStatus, currentFilters, currentQuery, filterCategories, setCurrentQuery}) => {
   return (
     <>
       { currentQuery === "" ? null :
-
-        <span key={'query-badges'} ><strong>Search:</strong> {currentQuery}</span>}
+        (
+          <>
+          <span key={'query-badges'}>
+            <strong>Search: </strong>
+          </span>
+          <button className="btn btn-link bg-primary text-white badge mb-2" href="#" onClick={() => {
+            getRecords(selectedFilters, "")
+            setSelectedQuery("")
+            setCurrentQuery("")
+          }}>
+             {currentQuery} &nbsp;
+            <FontAwesomeIcon className="text-white close-sm" icon={faTimesCircle} size="1x" />
+          </button>
+          &nbsp;
+          </>
+        )
+      }
       <CurrentFilterList currentFilters={currentFilters}
                          setFilters={setFilters}
                          filterCategories={filterCategories} />

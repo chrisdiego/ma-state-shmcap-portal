@@ -202,7 +202,7 @@ const ActionTracker = ({}) => {
 
   const clearFilters = () => {
     setSelectedFilters({});
-    getRecords({}, '');
+    getRecords({}, selectedQuery);
   }
 
   const applyFilters = () => {
@@ -221,11 +221,14 @@ const ActionTracker = ({}) => {
           page={page} />
         <Row className="my-4 m-0">
             <Utilities
+              selectedFilters={selectedFilters}
               currentQuery={currentQuery}
               setSelectedQuery={setSelectedQuery}
+              setCurrentQuery={setCurrentQuery}
               selectedQuery={selectedQuery}
               currentFilters={currentFilters}
               applyFilters={applyFilters}
+              getRecords={getRecords}
             />
         </Row>
         <Row className="m-0">
@@ -244,7 +247,9 @@ const ActionTracker = ({}) => {
                 total={actions.total}
                 loadingStatus={loadingStatus}
                 selectedFilters={selectedFilters}
+                setCurrentQuery={setCurrentQuery}
                 currentQuery={currentQuery}
+                selectedQuery={selectedQuery}
                 currentFilters={currentFilters}
                 setFilters={setFilters}
                 page={page}
@@ -253,6 +258,7 @@ const ActionTracker = ({}) => {
                 getRecords={getRecords}
                 navigatePages={navigatePages}
                 filterCategories={filterCategories}
+                setSelectedQuery={setSelectedQuery}
               />
             </Col>
         </Row>

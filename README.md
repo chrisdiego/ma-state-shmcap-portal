@@ -1,12 +1,8 @@
 ## New England States for Coordinated Air Use Management (NESCAUM)
-This was one piece of a freelance project that I completed for NESCAUM.  
+This was one piece of a freelance project that I completed for NESCAUM.  It's a portal for users to access information about NESCAUM's projects.  This is one of three parts to this project.
 
-#### It's made in React and has two components:
 
-  * A portal for users to access information
-
-  * An application that fetches data via an API and displays it to users with filtering, sorting, and searching functionality
-
+The other two are a database administration application, and a database lookup application to be embedded in this app.
 
 
 #### Packages used include:

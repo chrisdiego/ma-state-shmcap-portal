@@ -14,6 +14,12 @@ import chapter7 from './assets/pdf/SHMCAP_2018_chapter7.pdf';
 import chapter8 from './assets/pdf/SHMCAP_2018_chapter8.pdf';
 import chapter9 from './assets/pdf/SHMCAP_2018_chapter9.pdf';
 import chapter10 from './assets/pdf/SHMCAP_2018_chapter10.pdf';
+import appendixA from './assets/pdf/2018-SHMCAP-Appendix-A.pdf';
+import appendixB from './assets/pdf/2018-SHMCAP-Appendix-B.pdf';
+import appendixD from './assets/pdf/2018-SHMCAP-Appendix-D.pdf';
+import appendixE from './assets/pdf/2018-SHMCAP-Appendix-E.pdf';
+import appendixF from './assets/pdf/2018-SHMCAP-Appendix-F.pdf';
+import appendixG from './assets/pdf/2018-SHMCAP-Appendix-G.pdf';
 
 export const highlightFacets = [
     {
@@ -621,6 +627,43 @@ export const fullPlanData = [
         file: chapter10,
         size: "1.5 MB"
     },
+    {
+        title: "Appendix A: Risk Assessment Methodology",
+        description: "This appendix describes the methodologies for addressing the natural hazards that were part of the risk assessment update for the 2018 State Hazard Mitigation and Climate Adaptation Plan. It also summarizes the plan’s approach to incorporating technological and human-caused hazards.",
+        file: appendixA,
+        size: "452kB"
+    },
+    {
+        title: "Appendix B: Historical Disaster Occurrences",
+        description: "As described in the Risk Assessment (Chapter 4), many hazards discussed in this 2018 plan occur concurrently or as a result of one storm event. This appendix contains supporting information on historical disaster occurrences, including Presidentially-declared disasters.",
+        file: appendixB,
+        size: "594kB"
+
+    },
+    {
+        title: "Appendix D: Hazard Mitigation and Climate Adaptation Strategy Supporting Documentation",
+        description: "This appendix provides a review of the 2013 State Hazard Mitigation Plan mission and goal statements and status of actions. It also discusses the prioritization process and possible funding sources for the 2018 SHMCAP.",
+        file: appendixD,
+        size: "3.2MB"
+    },
+    {
+        title: "Appendix E: Planning Process Supporting Documentation",
+        description: "This appendix contains supporting documentation for the creation of the 2018 SHMCAP, including the project schedule; list of organizations, agencies, and other stakeholders; representative stakeholder workshop series presentations; and, the state agency vulnerability assessment survey.",
+        file: appendixE,
+        size: "3MB"
+    },
+    {
+        title: "Appendix F: Local Climate Adaptation and Climate Action Plans",
+        description: "This appendix provides a list of 26 local and regional climate adaptation and climate action plans that were identified during the preparation of the 2018 SHMCAP.",
+        file: appendixF,
+        size: "284kB"
+    },
+    {
+        title: "Appendix G: References",
+        description: "This appendix provides references used in the 2018 SHMCAP organized by chapter.",
+        file: appendixG,
+        size: "549kB"
+    }
 ];
 
 export const highlightsPageData = {

@@ -46,6 +46,33 @@ const ActionTracker = ({}) => {
     "/agency-priorities": {
       title: "Agency Priority Score",
       filter_key: "agency_priority_id",
+      sort_fn: (values) => {
+        let forced = ["Very High",
+                      "High",
+                      "Medium",
+                      "Low"];
+        //less than 0 — foo comes before bar
+        //greater than 0  — bar comes before foo
+        //equal to 0  — foo and bar are left unchanged with respect to each other.
+        values.sort( (a, b) => {
+          let forced_a = forced.findIndex((e) => e === a.name);
+          let forced_b = forced.findIndex((e) => e === b.name);
+          // If both are in forced, compare
+          if (forced_a >= 0 && forced_b >= 0) {
+            return forced_a < forced_b ? -1 : 1;
+          // If one is in forced - it gets a -1 or +1
+          } else if (forced_a >= 0) {
+            return -1;
+          } else if (forced_b >= 0) {
+            return 1;
+          } else {
+            // if neither, return 0
+            return 0;
+          }
+        });
+
+        return values;
+      }
     },
     /*
     "/shmcap-goals": {

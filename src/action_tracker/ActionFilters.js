@@ -30,6 +30,7 @@ const ActionFilters = ({ selectedFilters, setFilters, clearFilters, applyFilters
                 selectedFilters={selectedFilters}
                 setFilters={setFilters}
                 filter_key={filter.filter_key}
+                sort_fn={filter.sort_fn}
                 items={filter.data}
                 title={filter.title}
               />

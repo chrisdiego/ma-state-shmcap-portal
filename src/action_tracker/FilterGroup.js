@@ -4,7 +4,7 @@ import Chevron from './utils/Chevron';
 import './sass/FilterGroup.scss';
 
 
-const FilterGroup = ({ items, title, filter_key, selectedFilters, setFilters }) => {
+const FilterGroup = ({ items, title, sort_fn, filter_key, selectedFilters, setFilters }) => {
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("0px");
   const [setRotate, setRotateState] = useState("accordion__icon rotate");
@@ -20,6 +20,10 @@ const FilterGroup = ({ items, title, filter_key, selectedFilters, setFilters }) 
     setRotateState(
       setActive === "" ? "accordion__icon" : "accordion__icon rotate"
     );
+  }
+
+  if (sort_fn) {
+    items = sort_fn(items);
   }
 
   return (
